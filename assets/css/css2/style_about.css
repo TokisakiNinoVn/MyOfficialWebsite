@@ -56,7 +56,13 @@ a {
   position: relative;
   overflow: visible;
 }
-
+.waifus {
+  display: none;
+}
+.dark-mode .waifus {
+  display: flex;
+  justify-content: center;
+}
 a.waifu::after {
   content: "";
   display: none;
