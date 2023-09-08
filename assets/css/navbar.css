@@ -207,7 +207,8 @@ input[type="checkbox"] {
 
 /*__________________ [ Light-mode ] _________________________________________________________________*/
 .light-mode .navbar-header-logo a,
-.light-mode .list li a{
+.light-mode .list li a,
+.light-mode .menu-toggle {
   color: var(--black);
 }
 
