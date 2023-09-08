@@ -326,7 +326,13 @@ input[type="checkbox"] {
 }
 
 ._1st-toggle-btn input[type="checkbox"]:checked + span:after {
-
   background-color: #000000;
   transform: translate(39.5px, 0px); 
+}
+
+
+/*__________________ [ Light-mode ] _________________________________________________________________*/
+.light-mode .navbar-header-logo a,
+.light-mode .list li a{
+  color: var(--black);
 }

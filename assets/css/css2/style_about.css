@@ -1,11 +1,11 @@
 /* Color */
 :root {
-    --blue:  rgb(0, 242, 255);
-    --trueBlack: rgb(0, 0, 0);
-    --trueWhite: rgb(255, 255, 255);
-    --red: rgb(186, 42, 42);
-    --black: rgb(0,0,0);
-    --white: rgb(255, 255, 255);
+  --blue:  rgb(0, 242, 255);
+  --trueBlack: rgb(0, 0, 0);
+  --trueWhite: rgb(255, 255, 255);
+  --red: rgb(186, 42, 42);
+  --black: rgb(0,0,0);
+  --white: rgb(255, 255, 255);
 }
 
 body {
@@ -15,9 +15,7 @@ body {
 .container {
   position: fixed !important;
   top: 0;
-  background-color:var(--trueWhite);
   transition: background-color 1.3s ease-out;
-
 }
 
 .navbar {
@@ -52,13 +50,13 @@ p {
 a { 
   text-decoration: none;
   position: relative;
-  overflow: visible;
+  color: var(--blue);
 }
 
 .waifus {
   display: none;
 }
-.dark-mode .waifus {
+.light-mode .waifus {
   display: flex;
   justify-content: center;
 }
@@ -118,7 +116,7 @@ a:hover {
   font-weight: bold;
 }
 
-.dark-mode a:hover {
+.light-mode a:hover {
   color:var(--red); /* Khách */
   font-weight: bold;
 }
@@ -191,21 +189,18 @@ a:hover {
   }
 }
 
-/*________________________________________________________________________________ [ Dark-mode ] ____________________*/
-.dark-mode a {
-  text-decoration: underline;
+/*________________________________________________________________________________ [ light-mode ] ____________________*/
+.light-mode a {
+  text-decoration: none;
+  color: var(--red);
 }
-.dark-mode .hello,
-.dark-mode .name-more,
-.dark-mode .gamelist,
-.dark-mode .anime,
-.dark-mode .fact-content,
-.dark-mode .like-sendu,
-.dark-mode span,
-.dark-mode h4 {
-  color: var(--white);
+.light-mode .hello,
+.light-mode .name-more,
+.light-mode .gamelist,
+.light-mode .anime,
+.light-mode .fact-content,
+.light-mode .like-sendu,
+.light-mode span,
+.light-mode h4 {
+  color: var(--black);
 } 
-
-.dark-mode .container {
-  background-color: var(--black);
-}

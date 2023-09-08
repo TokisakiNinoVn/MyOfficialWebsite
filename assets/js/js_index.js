@@ -83,33 +83,38 @@ increaseVisitCount();
 
 
 
-//   // Hàm để lưu trạng thái chế độ vào localStorage
-// function saveModeToLocalStorage(mode) {
-//     localStorage.setItem('siteMode', mode);
+// // Lấy thẻ body
+// const body = document.body;
+
+// // Lấy phần tử nút chuyển đổi
+// const toggleBtn = document.getElementById('mode-link');
+
+// // Kiểm tra xem đã lưu trạng thái light mode trong localStorage chưa
+// const isLightMode = localStorage.getItem('isLightMode');
+
+// // Kiểm tra và áp dụng chế độ light hoặc dark
+// if (isLightMode === 'true') {
+//   body.classList.add('light-mode');
+//   toggleBtn.querySelector('input').checked = true;
+// } else {
+//   body.classList.remove('light-mode');
+//   toggleBtn.querySelector('input').checked = false;
+// }
+
+// // Hàm để chuyển đổi chế độ light/dark
+// function toggleLightMode() {
+//   if (body.classList.contains('light-mode')) {
+//     body.classList.remove('light-mode');
+//     toggleBtn.querySelector('input').checked = false;
+//     localStorage.setItem('isLightMode', 'false');
+//   } else {
+//     body.classList.add('light-mode');
+//     toggleBtn.querySelector('input').checked = true;
+//     localStorage.setItem('isLightMode', 'true');
 //   }
-  
-//   // Hàm để đọc trạng thái chế độ từ localStorage
-//   function loadModeFromLocalStorage() {
-//     const savedMode = localStorage.getItem('siteMode');
-//     return savedMode || 'dark-mode'; // Nếu không có dữ liệu, mặc định sử dụng dark mode
-//   }
-  
-//   // Hàm để thiết lập trạng thái chế độ tùy thuộc vào dữ liệu đã lưu
-//   function setSiteMode() {
-//     const currentMode = loadModeFromLocalStorage();
-    
-//     // Ứng dụng chế độ đã lưu vào trang web
-//     if (currentMode === 'light-mode') {
-//       // Áp dụng chế độ light mode vào trang web
-//       document.body.classList.remove('dark-mode'); // Đảm bảo dark mode bị tắt
-//       // Thêm lớp hoặc các thiết lập khác cho light mode
-//     } else {
-//       // Áp dụng chế độ dark mode vào trang web
-//       document.body.classList.add('dark-mode'); // Đảm bảo dark mode được bật
-//       // Thêm lớp hoặc các thiết lập khác cho dark mode
-//     }
-//   }
-  
-//   // Gọi hàm để thiết lập trạng thái chế độ khi trang web được tải
-//   setSiteMode();
+// }
+
+// // Đặt sự kiện click cho nút chuyển đổi
+// toggleBtn.addEventListener('click', toggleLightMode);
+
   
