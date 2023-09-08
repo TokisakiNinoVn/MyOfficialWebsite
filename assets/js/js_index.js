@@ -2,6 +2,7 @@ document.getElementById('mode-link').onclick = toggleDarkMode;
 function toggleDarkMode() {
   var body = document.querySelector('body');
   body.classList.toggle('light-mode');
+//   body.id.toggle('light-mode');
 }
 
 function toggleMenu() {
@@ -83,35 +84,76 @@ increaseVisitCount();
 
 
 
+
 // Lấy thẻ body
-const body = document.body;
-const toggleBtn = document.getElementById('mode-link');
+var body = document.body;
 
-// Kiểm tra xem đã lưu trạng thái light mode trong localStorage chưa
-const isLightMode = localStorage.getItem('isLightMode');
-
-// Kiểm tra và áp dụng chế độ light hoặc dark
-if (isLightMode === 'true') {
-  body.classList.add('light-mode');
-  toggleBtn.querySelector('input[type="checkbox"]').checked = true;
-} else {
-  body.classList.remove('light-mode');
-  toggleBtn.querySelector('input[type="checkbox"]').checked = false;
-}
-
-// Hàm để chuyển đổi chế độ light/dark
+// Function để thêm hoặc xóa lớp CSS "light-mode"
 function toggleLightMode() {
-  if (body.classList.contains('light-mode')) {
-    body.classList.remove('light-mode');
-    toggleBtn.querySelector('input[type="checkbox"]').checked = false;
-    localStorage.setItem('isLightMode', 'false');
+  body.classList.toggle('light-mode');
+  
+  // Kiểm tra xem lớp đã được thêm vào hay không
+  var hasLightMode = body.classList.contains('light-mode');
+  
+  // Nếu có lớp "light-mode", thêm id "light-mode" vào body, ngược lại xóa id "light-mode"
+  if (hasLightMode) {
+    body.id = 'light-mode';
   } else {
-    body.classList.add('light-mode');
-    toggleBtn.querySelector('input[type="checkbox"]').checked = true;
-    localStorage.setItem('isLightMode', 'true');
+    body.removeAttribute('id');
   }
 }
-toggleBtn.addEventListener('click', toggleLightMode);
+
+
+// Gắn sự kiện click cho nút
+var button = document.getElementById('toggle-button');
+button.addEventListener('click', toggleLightMode);
+
+
+// Hàm để lưu trạng thái chế độ vào Local Storage
+function saveLightModeState(isLightMode) {
+    localStorage.setItem('lightMode', isLightMode);
+}
+
+// Hàm để đọc trạng thái chế độ từ Local Storage
+function getLightModeState() {
+    return localStorage.getItem('lightMode') === 'true';
+}
+
+// Hàm khởi tạo trạng thái ban đầu
+function initializeLightMode() {
+    var body = document.body;
+    var lightModeClass = "light-mode";
+    var isLightMode = getLightModeState();
+
+    // Nếu đã lưu trạng thái chế độ sáng, áp dụng nó cho trang
+    if (isLightMode) {
+        body.classList.add(lightModeClass);
+        body.id = "light-mode";
+    }
+}
+
+// Hàm chuyển đổi chế độ sáng/tối
+function toggleLightMode() {
+    var body = document.body;
+    var lightModeClass = "light-mode";
+    var isLightMode = getLightModeState();
+
+    // Đảo ngược trạng thái và lưu nó vào Local Storage
+    isLightMode = !isLightMode;
+    saveLightModeState(isLightMode);
+
+    // Áp dụng trạng thái chế độ sáng/tối cho trang
+    if (isLightMode) {
+        body.classList.add(lightModeClass);
+        body.id = "light-mode";
+    } else {
+        body.classList.remove(lightModeClass);
+        body.removeAttribute("id");
+    }
+}
+
+// Gọi hàm khởi tạo để thiết lập trạng thái ban đầu
+initializeLightMode();
 
 
   
