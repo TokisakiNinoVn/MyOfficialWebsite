@@ -83,38 +83,35 @@ increaseVisitCount();
 
 
 
-// // Lấy thẻ body
-// const body = document.body;
+// Lấy thẻ body
+const body = document.body;
+const toggleBtn = document.getElementById('mode-link');
 
-// // Lấy phần tử nút chuyển đổi
-// const toggleBtn = document.getElementById('mode-link');
+// Kiểm tra xem đã lưu trạng thái light mode trong localStorage chưa
+const isLightMode = localStorage.getItem('isLightMode');
 
-// // Kiểm tra xem đã lưu trạng thái light mode trong localStorage chưa
-// const isLightMode = localStorage.getItem('isLightMode');
+// Kiểm tra và áp dụng chế độ light hoặc dark
+if (isLightMode === 'true') {
+  body.classList.add('light-mode');
+  toggleBtn.querySelector('input[type="checkbox"]').checked = true;
+} else {
+  body.classList.remove('light-mode');
+  toggleBtn.querySelector('input[type="checkbox"]').checked = false;
+}
 
-// // Kiểm tra và áp dụng chế độ light hoặc dark
-// if (isLightMode === 'true') {
-//   body.classList.add('light-mode');
-//   toggleBtn.querySelector('input').checked = true;
-// } else {
-//   body.classList.remove('light-mode');
-//   toggleBtn.querySelector('input').checked = false;
-// }
+// Hàm để chuyển đổi chế độ light/dark
+function toggleLightMode() {
+  if (body.classList.contains('light-mode')) {
+    body.classList.remove('light-mode');
+    toggleBtn.querySelector('input[type="checkbox"]').checked = false;
+    localStorage.setItem('isLightMode', 'false');
+  } else {
+    body.classList.add('light-mode');
+    toggleBtn.querySelector('input[type="checkbox"]').checked = true;
+    localStorage.setItem('isLightMode', 'true');
+  }
+}
+toggleBtn.addEventListener('click', toggleLightMode);
 
-// // Hàm để chuyển đổi chế độ light/dark
-// function toggleLightMode() {
-//   if (body.classList.contains('light-mode')) {
-//     body.classList.remove('light-mode');
-//     toggleBtn.querySelector('input').checked = false;
-//     localStorage.setItem('isLightMode', 'false');
-//   } else {
-//     body.classList.add('light-mode');
-//     toggleBtn.querySelector('input').checked = true;
-//     localStorage.setItem('isLightMode', 'true');
-//   }
-// }
-
-// // Đặt sự kiện click cho nút chuyển đổi
-// toggleBtn.addEventListener('click', toggleLightMode);
 
   
