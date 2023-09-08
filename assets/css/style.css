@@ -7,7 +7,9 @@
 }
 
 html {
-  font-family: 'Microsoft Jhenghei', 'lanting', Arial;
+  /* font-family: 'Microsoft Jhenghei', 'lanting', Arial; */
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {

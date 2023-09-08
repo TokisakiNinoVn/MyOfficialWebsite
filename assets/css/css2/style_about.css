@@ -15,12 +15,19 @@ body {
 .container {
   position: fixed !important;
   top: 0;
+  background-color: var(--trueBlack);
   transition: background-color 1.3s ease-out;
+  left: 0;
 }
 
 .navbar {
   z-index: 100;
 }
+
+.light-mode .container {
+  background-color: var(--white);
+}
+
 
 /*_________________________________________________ [ Style ] ____________________*/
 ::-webkit-scrollbar {
@@ -53,13 +60,13 @@ a {
   color: var(--blue);
 }
 
-.waifus {
+.light-mode .fact-span p.p-waifu {
   display: none;
 }
-.light-mode .waifus {
+/* .light-mode .waifus {
   display: flex;
   justify-content: center;
-}
+} */
 a.waifu::after {
   content: "";
   display: none;

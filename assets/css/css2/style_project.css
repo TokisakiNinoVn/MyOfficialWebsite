@@ -4,22 +4,21 @@ body {
     overflow-y: auto !important;
     
 }
+
 .main {
     min-height: 90vh;
 }
+
 .navbar {
     background-color: black;
 }
+
 .light-mode .navbar {
     background-color: rgb(255, 255, 255);
 }
 
 
-
-
-
-
-
+/*__________________ [ Style ] _________________________________________________________________*/
 span.title {
     width: 100%;
     margin: 0 0;
