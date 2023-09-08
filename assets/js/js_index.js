@@ -1,4 +1,8 @@
 document.getElementById('mode-link').onclick = toggleDarkMode;
+function toggleDarkMode() {
+  var body = document.querySelector('body');
+  body.classList.toggle('dark-mode');
+}
 
 function toggleMenu() {
     var menuToggle = document.querySelector('.menu-toggle');
@@ -7,10 +11,6 @@ function toggleMenu() {
     menuNavbarRight.classList.toggle('open');
 }
 
-function toggleDarkMode() {
-var body = document.querySelector('body');
-body.classList.toggle('dark-mode');
-}
 
 
 // Thêm sự kiện click vào body
@@ -53,14 +53,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 increaseVisitCount();
 
-// document.addEventListener("contextmenu", function(e) {
-//     e.preventDefault();
-// });
-
-
 
 
 // Ban F12
+// document.addEventListener("contextmenu", function(e) {
+//     e.preventDefault();
+// });
 // document.addEventListener("keydown", function(e) {
 //     if (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) {
 //         e.preventDefault();
