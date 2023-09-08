@@ -51,15 +51,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentCount = getVisitCount();
     updateVisitCount(currentCount);
 });
-
-// Gọi hàm increaseVisitCount() khi người dùng truy cập vào trang web
 increaseVisitCount();
-
-
 
 document.addEventListener("contextmenu", function(e) {
     e.preventDefault();
 });
+
+
+
+
+// Ban F12
 document.addEventListener("keydown", function(e) {
     if (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) {
         e.preventDefault();
@@ -70,4 +71,47 @@ document.addEventListener('contextmenu', function(event) {
     event.preventDefault();
     alert('>> Tokisaki Nino: "Say no to "Inspect" website!" :))');
 });
+
+window.addEventListener('keydown', function(event) {
+    if (event.key === 'F12' || event.keyCode === 123) {
+    //   alert('Không được phép truy cập mã nguồn trang web!');
+      alert('Access to website source code is not allowed!');
+
+      event.preventDefault();
+    }
+  });
+
+  
+
+
+
+  // Hàm để lưu trạng thái chế độ vào localStorage
+function saveModeToLocalStorage(mode) {
+    localStorage.setItem('siteMode', mode);
+  }
+  
+  // Hàm để đọc trạng thái chế độ từ localStorage
+  function loadModeFromLocalStorage() {
+    const savedMode = localStorage.getItem('siteMode');
+    return savedMode || 'dark-mode'; // Nếu không có dữ liệu, mặc định sử dụng dark mode
+  }
+  
+  // Hàm để thiết lập trạng thái chế độ tùy thuộc vào dữ liệu đã lưu
+  function setSiteMode() {
+    const currentMode = loadModeFromLocalStorage();
+    
+    // Ứng dụng chế độ đã lưu vào trang web
+    if (currentMode === 'light-mode') {
+      // Áp dụng chế độ light mode vào trang web
+      document.body.classList.remove('dark-mode'); // Đảm bảo dark mode bị tắt
+      // Thêm lớp hoặc các thiết lập khác cho light mode
+    } else {
+      // Áp dụng chế độ dark mode vào trang web
+      document.body.classList.add('dark-mode'); // Đảm bảo dark mode được bật
+      // Thêm lớp hoặc các thiết lập khác cho dark mode
+    }
+  }
+  
+  // Gọi hàm để thiết lập trạng thái chế độ khi trang web được tải
+  setSiteMode();
   

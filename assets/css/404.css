@@ -25,13 +25,9 @@
 
   .container {
     display: flex;
-    /* height: 100vh;
-    width: 100vw; */
-    /* align-items: center; */
     justify-content: center;
 
-    background-image: url(./assets/image/Shinomia.jpg);
-    /* background-color: aqua; */
+    /* background-image: url(./assets/image/Shinomia.jpg); */
   }
 
   .content {
