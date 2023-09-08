@@ -19,11 +19,21 @@ let infor_project = [
         img: "./assets/image/Ai.jpg",
         name: "Honkai Star Rail Loading HTML-CSS",
     },
+    {
+        url: "https://nino.is-a.dev/HonkaiStarRailLoadingHTML-CSS/",
+        img: "./assets/image/Ai.jpg",
+        name: "Honkai Star Rail Loading HTML-CSS",
+    },
+    {
+        url: "https://nino.is-a.dev/HonkaiStarRailLoadingHTML-CSS/",
+        img: "./assets/image/Ai.jpg",
+        name: "Honkai Star Rail Loading HTML-CSS",
+    },
 
 ]
 
 document.addEventListener("DOMContentLoaded", function () {
-    const mainDiv = document.querySelector(".main");
+    const projectDiv = document.querySelector(".project");
   
     for (let i = 0; i < infor_project.length; i++) {
       const project = infor_project[i];
@@ -35,15 +45,23 @@ document.addEventListener("DOMContentLoaded", function () {
       img.alt = "";
       img.classList.add("preview");
   
+      const divLink = document.createElement("div");
+      divLink.classList.add("div_link");
+  
       const a = document.createElement("a");
       a.href = project.url;
       a.classList.add("link_project");
-      a.textContent = project.name;
   
+      const span = document.createElement("span");
+      span.textContent = project.name;
+  
+      a.appendChild(span);
+      divLink.appendChild(a);
       listProjectDiv.appendChild(img);
-      listProjectDiv.appendChild(a);
+      listProjectDiv.appendChild(divLink);
   
-      mainDiv.appendChild(listProjectDiv);
+      projectDiv.appendChild(listProjectDiv);
     }
   });
+  
   
