@@ -26,6 +26,17 @@
   z-index: 9999;
   overflow: hidden;
 }
+.loader-wrapper::after {
+  content: "Please Wait...!";
+  color: var(--white);
+  width: 200px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 100px;
+
+  position: absolute;
+  z-index: 10000;
+}
 
 .window-left, .window-right {
   position: absolute;

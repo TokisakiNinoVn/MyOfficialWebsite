@@ -81,7 +81,22 @@ element.addEventListener('animationiteration', function () {
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const fadeElements = document.querySelectorAll('.fade-in');
 
+    // Thêm một sự kiện transitionend để loại bỏ lớp CSS "fade-in" sau khi hoàn thành hiệu ứng xuất hiện
+    fadeElements.forEach(element => {
+        element.addEventListener('transitionend', () => {
+            element.classList.remove('fade-in');
+        });
+    });
+
+    // Kích hoạt hiệu ứng xuất hiện bằng cách thiết lập opacity và transform
+    fadeElements.forEach(element => {
+        element.style.opacity = 1;
+        element.style.transform = 'translateY(0)';
+    });
+});
 
 
 
