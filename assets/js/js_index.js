@@ -1,7 +1,7 @@
 document.getElementById('mode-link').onclick = toggleDarkMode;
 function toggleDarkMode() {
   var body = document.querySelector('body');
-  body.classList.toggle('dark-mode');
+  body.classList.toggle('light-mode');
 }
 
 function toggleMenu() {
@@ -83,33 +83,33 @@ increaseVisitCount();
 
 
 
-  // Hàm để lưu trạng thái chế độ vào localStorage
-function saveModeToLocalStorage(mode) {
-    localStorage.setItem('siteMode', mode);
-  }
+//   // Hàm để lưu trạng thái chế độ vào localStorage
+// function saveModeToLocalStorage(mode) {
+//     localStorage.setItem('siteMode', mode);
+//   }
   
-  // Hàm để đọc trạng thái chế độ từ localStorage
-  function loadModeFromLocalStorage() {
-    const savedMode = localStorage.getItem('siteMode');
-    return savedMode || 'dark-mode'; // Nếu không có dữ liệu, mặc định sử dụng dark mode
-  }
+//   // Hàm để đọc trạng thái chế độ từ localStorage
+//   function loadModeFromLocalStorage() {
+//     const savedMode = localStorage.getItem('siteMode');
+//     return savedMode || 'dark-mode'; // Nếu không có dữ liệu, mặc định sử dụng dark mode
+//   }
   
-  // Hàm để thiết lập trạng thái chế độ tùy thuộc vào dữ liệu đã lưu
-  function setSiteMode() {
-    const currentMode = loadModeFromLocalStorage();
+//   // Hàm để thiết lập trạng thái chế độ tùy thuộc vào dữ liệu đã lưu
+//   function setSiteMode() {
+//     const currentMode = loadModeFromLocalStorage();
     
-    // Ứng dụng chế độ đã lưu vào trang web
-    if (currentMode === 'light-mode') {
-      // Áp dụng chế độ light mode vào trang web
-      document.body.classList.remove('dark-mode'); // Đảm bảo dark mode bị tắt
-      // Thêm lớp hoặc các thiết lập khác cho light mode
-    } else {
-      // Áp dụng chế độ dark mode vào trang web
-      document.body.classList.add('dark-mode'); // Đảm bảo dark mode được bật
-      // Thêm lớp hoặc các thiết lập khác cho dark mode
-    }
-  }
+//     // Ứng dụng chế độ đã lưu vào trang web
+//     if (currentMode === 'light-mode') {
+//       // Áp dụng chế độ light mode vào trang web
+//       document.body.classList.remove('dark-mode'); // Đảm bảo dark mode bị tắt
+//       // Thêm lớp hoặc các thiết lập khác cho light mode
+//     } else {
+//       // Áp dụng chế độ dark mode vào trang web
+//       document.body.classList.add('dark-mode'); // Đảm bảo dark mode được bật
+//       // Thêm lớp hoặc các thiết lập khác cho dark mode
+//     }
+//   }
   
-  // Gọi hàm để thiết lập trạng thái chế độ khi trang web được tải
-  setSiteMode();
+//   // Gọi hàm để thiết lập trạng thái chế độ khi trang web được tải
+//   setSiteMode();
   
