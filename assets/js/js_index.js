@@ -56,6 +56,35 @@ increaseVisitCount();
 
 
 
+
+
+
+window.addEventListener('load', () => {
+    const loaderWrapper = document.querySelector('.loader-wrapper');
+    const content = document.querySelector('.content');
+
+    setTimeout(() => {
+        loaderWrapper.style.display = 'none'; // Ẩn loader khi trang đã tải xong
+        content.style.display = 'block'; // Hiển thị nội dung trang web
+    }, 1980); // Thời gian mẫu, bạn có thể điều chỉnh theo ý muốn
+});
+
+
+// Lấy tham chiếu đến phần tử cần ẩn
+var element = document.querySelector('.loader');
+
+// Đợi animation hoàn thành sau 3 lần lặp
+element.addEventListener('animationiteration', function () {
+  element.classList.add('hidden');
+});
+
+
+
+
+
+
+
+
 // Ban F12
 // document.addEventListener("contextmenu", function(e) {
 //     e.preventDefault();
