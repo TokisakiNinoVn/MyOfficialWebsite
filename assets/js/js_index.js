@@ -81,48 +81,48 @@ element.addEventListener('animationiteration', function () {
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const fadeElements = document.querySelectorAll('.fade-in');
+// document.addEventListener('DOMContentLoaded', function() {
+//     const fadeElements = document.querySelectorAll('.fade-in');
 
-    // Thêm một sự kiện transitionend để loại bỏ lớp CSS "fade-in" sau khi hoàn thành hiệu ứng xuất hiện
-    fadeElements.forEach(element => {
-        element.addEventListener('transitionend', () => {
-            element.classList.remove('fade-in');
-        });
-    });
+//     // Thêm một sự kiện transitionend để loại bỏ lớp CSS "fade-in" sau khi hoàn thành hiệu ứng xuất hiện
+//     fadeElements.forEach(element => {
+//         element.addEventListener('transitionend', () => {
+//             element.classList.remove('fade-in');
+//         });
+//     });
 
-    // Kích hoạt hiệu ứng xuất hiện bằng cách thiết lập opacity và transform
-    fadeElements.forEach(element => {
-        element.style.opacity = 1;
-        element.style.transform = 'translateY(0)';
-    });
+//     // Kích hoạt hiệu ứng xuất hiện bằng cách thiết lập opacity và transform
+//     fadeElements.forEach(element => {
+//         element.style.opacity = 1;
+//         element.style.transform = 'translateY(0)';
+//     });
+// });
+
+
+
+//// Ban F12
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+});
+document.addEventListener("keydown", function(e) {
+    if (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) {
+        e.preventDefault();
+    }
 });
 
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+    alert('>> Tokisaki Nino: "Say no to "Inspect" website!" ');
+});
 
+window.addEventListener('keydown', function(event) {
+    if (event.key === 'F12' || event.keyCode === 123) {
+    //   alert('Không được phép truy cập mã nguồn trang web!');
+      alert('Access to website source code is not allowed!');
 
-// Ban F12
-// document.addEventListener("contextmenu", function(e) {
-//     e.preventDefault();
-// });
-// document.addEventListener("keydown", function(e) {
-//     if (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) {
-//         e.preventDefault();
-//     }
-// });
-
-// document.addEventListener('contextmenu', function(event) {
-//     event.preventDefault();
-//     alert('>> Tokisaki Nino: "Say no to "Inspect" website!" :))');
-// });
-
-// window.addEventListener('keydown', function(event) {
-//     if (event.key === 'F12' || event.keyCode === 123) {
-//     //   alert('Không được phép truy cập mã nguồn trang web!');
-//       alert('Access to website source code is not allowed!');
-
-//       event.preventDefault();
-//     }
-//   });
+      event.preventDefault();
+    }
+  });
 
   
 

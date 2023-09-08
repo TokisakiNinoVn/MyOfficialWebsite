@@ -30,6 +30,7 @@ span.title {
 
 .light-mode span.title {
     color:rgb(0, 0, 0);
+    text-shadow: rgba(200, 64, 64, 0.956) 0px 5px 15px;
 }
 
 .project {
