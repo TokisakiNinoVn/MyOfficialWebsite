@@ -1,5 +1,10 @@
 let infor_project = [
     {
+        url: "https://nino.is-a.dev/",
+        img: "./assets/image/Ai.jpg",
+        name: "My Card Information",
+    },
+    {
         url: "https://nino.is-a.dev/MyOfficialWebsite/",
         img: "./assets/image/Ai.jpg",
         name: "My official website",
@@ -18,7 +23,7 @@ let infor_project = [
         url: "https://nino.is-a.dev/HonkaiStarRailLoadingHTML-CSS/",
         img: "./assets/image/Ai.jpg",
         name: "Honkai Star Rail Loading HTML-CSS",
-    }
+    },
 
 ]
 
