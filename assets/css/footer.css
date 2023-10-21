@@ -34,6 +34,13 @@
   margin: 0;
 }
 
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  font-weight: bold;
+}
+
 @media (max-width: 516px) {
   .real {
     font-size: 12px;

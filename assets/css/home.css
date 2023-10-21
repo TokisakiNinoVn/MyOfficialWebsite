@@ -327,6 +327,8 @@ section #services li div:hover {
   height: 98vh;
   overflow: hidden;
   z-index: 1;
+  margin-top: 0;
+  padding-left: 0;
 }
   
 .circles li {

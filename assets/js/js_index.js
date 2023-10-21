@@ -2,7 +2,6 @@ document.getElementById('mode-link').onclick = toggleDarkMode;
 function toggleDarkMode() {
   var body = document.querySelector('body');
   body.classList.toggle('light-mode');
-//   body.id.toggle('light-mode');
 }
 
 function toggleMenu() {
@@ -29,30 +28,30 @@ document.body.addEventListener('click', function(event) {
 
 
 // ____________________________________ [ Dem so nguoi vo trang ca nhan ]____________________________________________________
-function updateVisitCount(count) {
-    document.getElementById('visitCount').textContent = count;
-}
+// function updateVisitCount(count) {
+//     document.getElementById('visitCount').textContent = count;
+// }
 
-// Hàm để lấy số lượt truy cập từ Local Storage
-function getVisitCount() {
-    const count = localStorage.getItem('visitCount');
-    return count ? parseInt(count) : 0;
-}
+// // Hàm để lấy số lượt truy cập từ Local Storage
+// function getVisitCount() {
+//     const count = localStorage.getItem('visitCount');
+//     return count ? parseInt(count) : 0;
+// }
 
-// Hàm để tăng số lượt truy cập và cập nhật lại trong Local Storage
-function increaseVisitCount() {
-    const currentCount = getVisitCount();
-    const newCount = currentCount + 1;
-    localStorage.setItem('visitCount', newCount);
-    updateVisitCount(newCount);
-}
+// // Hàm để tăng số lượt truy cập và cập nhật lại trong Local Storage
+// function increaseVisitCount() {
+//     const currentCount = getVisitCount();
+//     const newCount = currentCount + 1;
+//     localStorage.setItem('visitCount', newCount);
+//     updateVisitCount(newCount);
+// }
 
-// Khi trang được tải lên, ta sẽ cập nhật số lượt truy cập lên giao diện
-document.addEventListener('DOMContentLoaded', function() {
-    const currentCount = getVisitCount();
-    updateVisitCount(currentCount);
-});
-increaseVisitCount();
+// // Khi trang được tải lên, ta sẽ cập nhật số lượt truy cập lên giao diện
+// document.addEventListener('DOMContentLoaded', function() {
+//     const currentCount = getVisitCount();
+//     updateVisitCount(currentCount);
+// });
+// increaseVisitCount();
 
 
 
@@ -100,7 +99,7 @@ element.addEventListener('animationiteration', function () {
 
 
 
-//// Ban F12
+// Ban F12
 document.addEventListener("contextmenu", function(e) {
     e.preventDefault();
 });
@@ -112,18 +111,28 @@ document.addEventListener("keydown", function(e) {
 
 document.addEventListener('contextmenu', function(event) {
     event.preventDefault();
-    alert('>> Tokisaki Nino: "Say no to "Inspect" website!" ');
+    //alert('>> Tokisaki Nino: "Say no to "Inspect" website!" ');
 });
 
 window.addEventListener('keydown', function(event) {
     if (event.key === 'F12' || event.keyCode === 123) {
-    //   alert('Không được phép truy cập mã nguồn trang web!');
-      alert('Access to website source code is not allowed!');
-
-      event.preventDefault();
+      //alert('Access to website source code is not allowed!');
+    event.preventDefault();
     }
-  });
+});
 
-  
+// Sử dụng GitHub API để lấy avatar
+const username = "tokisakininovn";
+const apiUrl = `https://api.github.com/users/${username}`;
 
-  
+fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+        const avatarUrl = data.avatar_url;
+        const avatarElement = document.getElementById("my_avt");
+        avatarElement.src = avatarUrl;
+    })
+    .catch(error => {
+    console.error('>> Error: ', error);
+    });
+setInterval(fetch, 10000);
