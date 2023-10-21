@@ -60,14 +60,16 @@ a {
   color: var(--blue);
 }
 
-.light-mode .fact-span p.p-waifu {
+/* .light-mode .fact-span p.p-waifu {
   display: none;
-}
+} */
+
 /* .light-mode .waifus {
   display: flex;
   justify-content: center;
 } */
-a.waifu::after {
+
+/* a.waifu::after {
   content: "";
   display: none;
 
@@ -79,9 +81,9 @@ a.waifu::after {
 
 a.waifu:hover::after {
   display: inline-block; 
-}
+} */
 
-a.kurumi::after {
+/* a.kurumi::after {
   content: "";
   background-image: url("./image/kurumi_icon2.jpg");
   position: absolute;
@@ -115,7 +117,7 @@ a.hoshinoAi::after {
 
   right: -210px;
   bottom: -100px;
-}
+} */
 
 
 a:hover {
