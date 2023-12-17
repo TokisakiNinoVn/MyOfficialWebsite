@@ -211,6 +211,51 @@ ul {
 .like {
   margin-left: 10px;
 }
+/*_________________________________________________ [ Main ] ____________________*/
+.main_about_scroll-child {
+  width: var(--max-witdh);
+  margin: auto;
+  margin-top: 10px;
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 17px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(94, 93, 93);
+  border-radius: 10px;
+
+}
+
+.menu_options {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 5px;
+  /* padding-bottom: 5px; */
+
+  border-bottom: 1px solid rgb(0, 255, 255);
+
+}
+.menu_options li {
+  cursor: pointer;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease-out;
+}
+.menu_options li:hover {
+  border-bottom: 3px solid rgb(255, 0, 221);
+}
+
+.img_banner {
+  width: 60%;
+  border-radius: 30px;
+  object-fit: cover;
+}
 /*_________________________________________________ [ Responsive ] ____________________*/
 @media (min-width: 1023px) {
 
