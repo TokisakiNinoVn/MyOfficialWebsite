@@ -1,7 +1,29 @@
+/* <a href="" target="_blank">>> Here.</a> */
+const html_ = `<a href="https://www.pinterest.com/ninomemories/elysia/" target="_blank">>> Here.</a>`
 let infor_posts = [
     {
+        tittle: "[...]",
+        description: "Elysia",
+        urlImg: "https://pbs.twimg.com/media/GA4VuctasAA3j2U?format=jpg&name=large",
+        dayPost: "2023/12/17",
+        countView: "0",
+        linkSource: "https://nino.is-a.dev/",
+        hashTag: "#TokisakiNino, #Nino, #Elysia, #SimpsForElysia",
+        viewCount: Math.floor(Math.random() * 2000),
+    },
+    {
+        tittle: "[...]",
+        description: "Elysia Album Pinterest " + html_,
+        urlImg: "https://pbs.twimg.com/media/F8T_VoEaEAAOqja?format=jpg&name=large",
+        dayPost: "2023/12/17",
+        countView: "0",
+        linkSource: "https://nino.is-a.dev/",
+        hashTag: "#TokisakiNino, #Nino, #Elysia",
+        viewCount: Math.floor(Math.random() * 10000),
+    },
+    {
         tittle: "Tokisaki Nino",
-        description: "Elysia is my waify. I love her so much. I will post her pictures here. Hope you like it.",
+        description: "Elysia is my waifu. I love her so much. I will post her pictures here. Simp for Elysia.",
         urlImg: "./assets/image/Elysia_.jpg",
         dayPost: "2023/12/17",
         countView: "0",
@@ -123,4 +145,4 @@ async function fetchDiscordStatus() {
 
 // Gọi hàm để lấy và cập nhật trạng thái Discord
 fetchDiscordStatus();
-setInterval(fetchDiscordStatus, 1000);  // Interval là 10 giây, không cần gọi mỗi giây
+setInterval(fetchDiscordStatus, 1000);  // Interval là 1 giây, không cần gọi mỗi giây
