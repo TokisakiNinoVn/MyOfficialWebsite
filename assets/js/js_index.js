@@ -1,7 +1,7 @@
 document.getElementById('mode-link').onclick = toggleDarkMode;
 function toggleDarkMode() {
-  var body = document.querySelector('body');
-  body.classList.toggle('light-mode');
+    var body = document.querySelector('body');
+    body.classList.toggle('light-mode');
 }
 
 function toggleMenu() {

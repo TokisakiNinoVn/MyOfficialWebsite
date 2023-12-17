@@ -10,14 +10,24 @@
 
 body {
   overflow: auto !important;
+  background-color: unset;
+  padding: 0px;
+  margin: 0px;
+  height: unset;
 }
 
 .container {
   position: fixed !important;
   top: 0;
   background-color: var(--trueBlack);
-  transition: background-color 1.3s ease-out;
+  /* transition: background-color 1.3s ease-out; */
   left: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 .navbar {
@@ -31,19 +41,14 @@ body {
 
 /*_________________________________________________ [ Style ] ____________________*/
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 0px;
 }
 ::-webkit-scrollbar:hover {
-  width: 10px;
+  width: 0px;
 }
 
 h4, p {
   text-align: center;
-}
-
-.text-hello {
-  margin-top: 0px;
-  font-size: 30px;
 }
 
 h4 {
@@ -58,6 +63,92 @@ a {
   text-decoration: none;
   position: relative;
   color: var(--blue);
+}
+
+ul {
+  list-style: none;
+}
+
+/*_________________________________________________ [ Responsive ] ____________________*/
+
+.main {
+  background-color: var(--black);
+  height: 2000px;
+  top: 64px;
+  display: block;
+}
+
+.background_img {
+  height: 216px;
+}
+.background_img img {
+  width: 100vw;
+  /* height: 100%; */
+}
+
+.name_basic {
+  background-color: rgb(83, 76, 76);
+  height: 100px;
+
+}
+.name_center {
+  background-color: rgb(194, 189, 189);
+  width: 1280px;
+  margin: auto;
+  height: 100px;
+  padding: 0px 20px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.name_left {
+  display: flex;
+  align-items: center;
+}
+
+.img_avatar {
+  position: relative;
+  --x: 200px;
+  width: var(--x);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+
+.img_avatar {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.frame_avatar {
+  position: absolute;
+  left: -30px;
+  top: -20px;
+  width: 190px;
+}
+
+.true-nick_name {
+  display: flex;
+  flex-direction: column;
+}
+
+.true_name {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.nick_name {
+  font-size: 20px;
+}
+
+.weiu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
