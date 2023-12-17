@@ -6,6 +6,8 @@
   --red: rgb(186, 42, 42);
   --black: rgb(0,0,0);
   --white: rgb(255, 255, 255);
+
+  --max-witdh: 1208px;
 }
 
 body {
@@ -19,7 +21,10 @@ body {
 .container {
   position: fixed !important;
   top: 0;
-  background-color: var(--trueBlack);
+  /* background-size: 100% 100%;
+  background-position: 0px 0px; */
+  background-image: linear-gradient(0deg, #00000000 1%, rgb(0, 0, 0) 99%);
+  backdrop-filter: blur(10px);
   /* transition: background-color 1.3s ease-out; */
   left: 0;
 }
@@ -72,31 +77,36 @@ ul {
 /*_________________________________________________ [ Responsive ] ____________________*/
 
 .main {
-  background-color: var(--black);
+  background-color: var(--trueBlack);
   height: 2000px;
-  top: 64px;
+  top: 0px;
   display: block;
 }
 
 .background_img {
-  height: 216px;
+  height: 300px;
+  width: 100vw;
+  z-index: 1;
 }
 .background_img img {
   width: 100vw;
-  /* height: 100%; */
+  height: 100%;
+  /* background-image: ; */
+  object-fit: cover;
+  z-index: 1;
 }
 
 .name_basic {
-  /* background-color: rgb(83, 76, 76); */
-  height: 110px;
-  background-color: rgb(194, 189, 189);
-
+  height: 100px;
+  background-color: rgb(43, 41, 41);
   display: flex;
   align-items: center;
 
+  z-index: 999;
 }
+
 .name_center {
-  width: 1280px;
+  width: var(--max-witdh);
   margin: auto;
   height: 100px;
   padding: 0px 20px;
@@ -128,13 +138,25 @@ ul {
 
 .frame_avatar {
   position: absolute;
-  left: -30px;
-  top: -20px;
+  left: -33px;
+  top: -25px;
   width: 190px;
 }
 
+.status_discord {
+  position: absolute;
+  bottom: 35px;
+  right: 15px;
+
+  --x: 35px;
+  width: var(--x);
+  height: var(--x);
+  border-radius: 50%;
+  background-color: var(--red);
+  border: 5px solid var(--trueWhite);
+}
+
 .true-nick_name {
-  /* margin-top: 10px; */
   display: flex;
   flex-direction: column;
 }
@@ -143,10 +165,13 @@ ul {
   font-size: 32px;
   font-weight: bold;
   color: var(--white);
+  line-height: 32px;
 }
 
 .nick_name {
   font-size: 20px;
+  line-height: 20px;
+
 }
 
 .weiu {
@@ -171,7 +196,7 @@ ul {
 .more_options div {
   padding: 8px 10px;
   border-radius: 5px;
-  background-color: rgb(126, 126, 126);
+  background-color: rgb(110, 109, 109);
   text-align: center;
   display: flex;
   align-items: center;
