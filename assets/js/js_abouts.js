@@ -104,45 +104,77 @@ function countDays() {
 countDays();
 
 
-// Path: assets/js/js_discord.js
-const userID = "906037896295878706";
+// Radom color
 const colorStatus = document.querySelector(".status_discord");
 
-async function fetchDiscordStatus() {
-    try {
-        const response = await axios.get(
-            `https://api.lanyard.rest/v1/users/${userID}`
-            // `https://api.lanyard.rest/v1/users/906037896295878706`
-        );
-        
-        const { data } = response.data;
-        const { discord_status, activities } = data;
+function generateRandomNumber() {
+    var randomNumber_1 = Math.floor(Math.random() * 256);
+    var randomNumber_2 = Math.floor(Math.random() * 256);
+    var randomNumber_3 = Math.floor(Math.random() * 256);
 
-        let backgroundColor;
-        switch (discord_status) {
-            case "online":
-                backgroundColor = "#00ff1e";
-                break;
-            case "idle":
-                backgroundColor = "#f5c904";
-                break;
-            case "dnd":
-                backgroundColor = "#f50408";
-                break;
-            case "offline":
-                backgroundColor = "rgb(103, 107, 103)";
-                break;
-            default:
-                backgroundColor = "rgb(225, 0, 255)";
-                break;
-        }
-
-        colorStatus.style.backgroundColor = backgroundColor;
-    } catch (error) {
-        console.error("Unable to get Discord status:", error);
-    }
+    // Sử dụng anime.js để thực hiện hiệu ứng chuyển màu
+    anime({
+        targets: colorStatus,
+        backgroundColor: `rgb(${randomNumber_1}, ${randomNumber_2}, ${randomNumber_3})`,
+        duration: 1000, // Thời gian chuyển màu (ms)
+        easing: 'easeInOutQuad' // Kiểu chuyển động
+    });
 }
+setInterval(generateRandomNumber, 2000); // Chuyển màu sau mỗi 2 giây
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// async function fetchDiscordStatus() {
+//     try {
+//         const response = await axios.get(
+//             `https://api.lanyard.rest/v1/users/${userID}`
+//             // `https://api.lanyard.rest/v1/users/906037896295878706`
+//         );
+        
+//         const { data } = response.data;
+//         const { discord_status, activities } = data;
+
+//         let backgroundColor;
+//         switch (discord_status) {
+//             case "online":
+//                 backgroundColor = "#00ff1e";
+//                 break;
+//             case "idle":
+//                 backgroundColor = "#f5c904";
+//                 break;
+//             case "dnd":
+//                 backgroundColor = "#f50408";
+//                 break;
+//             case "offline":
+//                 backgroundColor = "rgb(103, 107, 103)";
+//                 break;
+//             default:
+//                 backgroundColor = "rgb(225, 0, 255)";
+//                 break;
+//         }
+
+//         colorStatus.style.backgroundColor = backgroundColor;
+//     } catch (error) {
+//         console.error("Unable to get Discord status:", error);
+//     }
+// }
 
 // Gọi hàm để lấy và cập nhật trạng thái Discord
-fetchDiscordStatus();
-setInterval(fetchDiscordStatus, 1000);  // Interval là 1 giây, không cần gọi mỗi giây
+// fetchDiscordStatus();
+// setInterval(fetchDiscordStatus, 1000);  // Interval là 1 giây, không cần gọi mỗi giây
