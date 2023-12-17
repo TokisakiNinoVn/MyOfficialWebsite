@@ -1,5 +1,5 @@
-/* <a href="" target="_blank">>> Here.</a> */
-const html_ = `<a href="https://www.pinterest.com/ninomemories/elysia/" target="_blank">>> Here.</a>`
+/* <a href="" target="_blank" Here.</a> */
+const html_ = `<a href="https://www.pinterest.com/ninomemories/elysia/" target="_blank"> Here.</a>`
 let infor_posts = [
     {
         tittle: "[...]",
@@ -13,7 +13,7 @@ let infor_posts = [
     },
     {
         tittle: "[...]",
-        description: "Elysia Album Pinterest " + html_,
+        description: "Elysia Album Pinterest. >>" + html_,
         urlImg: "https://pbs.twimg.com/media/F8T_VoEaEAAOqja?format=jpg&name=large",
         dayPost: "2023/12/17",
         countView: "0",
