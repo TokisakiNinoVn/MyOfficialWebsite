@@ -53,7 +53,7 @@ body {
 }
 
 h4, p {
-  text-align: center;
+  /* text-align: center; */
 }
 
 h4 {
@@ -238,7 +238,7 @@ ul {
   margin: 10px 5px;
   /* padding-bottom: 5px; */
 
-  border-bottom: 1px solid rgb(0, 255, 255);
+  border-bottom: 1px solid rgb(147, 148, 148);
 
 }
 .menu_options li {
@@ -255,6 +255,96 @@ ul {
   width: 60%;
   border-radius: 30px;
   object-fit: cover;
+}
+
+/*_________________________________________________ [ Basic Infor ] ____________________*/
+.iuwk_iag {
+  margin: 20px;
+}
+.infor_content_1 {
+  position: relative;
+  padding: 10px;
+  background-color: rgb(66, 65, 64);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 10px;
+
+  margin: 24px;
+}
+
+.icon_ghim {
+  position: absolute;
+  top: -30px;
+  left: 0px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.icon_ghim_2 {
+  left: unset;
+  right: 0px;
+  top: -25px;
+}
+.card_information_code,
+.card_information {
+  width: 600px;
+  margin: auto;
+}
+.card_information_code {
+  /* padding: 10px 0px; */
+}
+.card_information {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px auto;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.card_top {
+  /* margin: auto; */
+}
+.card_top {
+  padding: 10px 10px;
+  background-color: rgb(134, 42, 42);
+}
+.card_top ul {
+  display: flex;
+}
+.card_top ul li {
+  --xy: 23px;
+  width: var(--xy);
+  height: var(--xy);
+  border-radius: 50%;
+  /* background-color: rgb(0, 255, 255); */
+}
+.card_top ul li:nth-child(1) {
+  background-color: rgb(255, 51, 0);
+  margin-right: 10px;
+}
+.card_top ul li:nth-child(2) {
+  background-color: rgb(255, 145, 0);
+  margin-right: 10px;
+}
+.card_top ul li:nth-child(3) {
+  background-color: rgb(4, 230, 34);
+}
+
+.card_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 18px;
+  background-color: black;
+}
+.code_key_value {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.code_color-pink {
+  color: rgb(174, 0, 255);
+}
+.code_color_yellow {
+  color: rgb(255, 187, 0);
 }
 /*_________________________________________________ [ Responsive ] ____________________*/
 @media (min-width: 1023px) {
