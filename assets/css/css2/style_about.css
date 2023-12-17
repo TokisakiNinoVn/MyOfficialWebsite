@@ -87,12 +87,15 @@ ul {
 }
 
 .name_basic {
-  background-color: rgb(83, 76, 76);
-  height: 100px;
+  /* background-color: rgb(83, 76, 76); */
+  height: 110px;
+  background-color: rgb(194, 189, 189);
+
+  display: flex;
+  align-items: center;
 
 }
 .name_center {
-  background-color: rgb(194, 189, 189);
   width: 1280px;
   margin: auto;
   height: 100px;
@@ -131,6 +134,7 @@ ul {
 }
 
 .true-nick_name {
+  /* margin-top: 10px; */
   display: flex;
   flex-direction: column;
 }
@@ -147,11 +151,41 @@ ul {
 
 .weiu {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
+.weiu li {
+  margin-right: 10px;
+}
+.weiu li:nth-last-child() {
+  margin-right: unset;
+}
 
+.more_options {
+  display: flex;
+}
+.more_options_ {
+  cursor: pointer;
 
+}
+.more_options div {
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: rgb(126, 126, 126);
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.more_options ion-icon {
+  font-size: 20px;
+}
+.follow_icon {
+  margin-right: 5px;
+
+}
+.like {
+  margin-left: 10px;
+}
 /*_________________________________________________ [ Responsive ] ____________________*/
 @media (min-width: 1023px) {
 
