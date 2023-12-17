@@ -74,7 +74,7 @@ var element = document.querySelector('.loader');
 
 // Đợi animation hoàn thành sau 3 lần lặp
 element.addEventListener('animationiteration', function () {
-  element.classList.add('hidden');
+    element.classList.add('hidden');
 });
 
 

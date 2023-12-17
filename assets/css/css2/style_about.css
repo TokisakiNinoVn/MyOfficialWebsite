@@ -153,7 +153,8 @@ ul {
   width: var(--x);
   height: var(--x);
   border-radius: 50%;
-  background-color: var(--red);
+  /* background-color: rgb(103, 107, 103); */
+  background-color: rgb(225, 0, 255);
   border: 5px solid var(--trueWhite);
 }
 
@@ -353,8 +354,84 @@ ul {
   color: rgb(255, 187, 0);
 }
 
-/*_________________________________________________ [ banner Elysia ] ____________________*/
+/*_________________________________________________ [ Posts ] ____________________*/
+.posts {
+  width: 100vw;
+}
+#main_post_scroll {
+  width: var(--max-witdh);
+  margin: auto;
+  padding: 30px;
+  padding-top: 0px;
+}
 
+.post_item {
+  background-color: rgb(70, 70, 70);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  /* border-bottom: 1px solid rgb(255, 0, 0); */
+}
+.post_infor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.post_infor img {
+  width: 64px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.iuwyj .post_name {
+  font-size: 24px;
+  font-weight: bold;
+}
+.tittle_post {
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.content_post {
+  font-size: 15px;
+  margin: 10px auto;
+}
+.post_img img {
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  max-height: 320px;
+  max-width: 1100px;
+}
+
+.hashtag {
+  color: rgb(0, 119, 255);
+  margin: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+div.infor_post_ {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 24px;
+}
+.view_post {
+  display: flex;
+  align-items: center;
+}
+.count_views {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.source_post {
+  color: aliceblue;
+}
+.source_post ion-icon:hover {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
 /*_________________________________________________ [ banner Elysia ] ____________________*/
 .img_banner_elysia {
   /* width: 100%; */
@@ -367,6 +444,8 @@ ul {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+
+  display: none;
 
 }
 /*_________________________________________________ [ Responsive ] ____________________*/
@@ -386,8 +465,8 @@ ul {
 
 @media (max-width: 321px) {
   html {
-    font-size: 12px;
   }
 }
+
 
 /*________________________________________________________________________________ [ light-mode ] ____________________*/

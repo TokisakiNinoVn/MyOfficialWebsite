@@ -1,12 +1,126 @@
 let infor_posts = [
     {
         tittle: "Tokisaki Nino",
-        description: "Tokisaki Nino (時崎 狂三, Tokisaki Kurumi) is a third-year student at Asahigaoka Branch School. She is the older sister of Tokisaki Miku and Tokisaki Yotsuba. She is also the leader of the band in the school.",
-        urlImg: "https://nino.is-a.dev/",
-        dayPost: "2021/08/01",
-        linkSource: "https://nino.is-a.dev/",
+        description: "Elysia is my waify. I love her so much. I will post her pictures here. Hope you like it.",
+        urlImg: "./assets/image/Elysia_.jpg",
+        dayPost: "2023/12/17",
         countView: "0",
+        linkSource: "https://nino.is-a.dev/",
+        hashTag: "#TokisakiNino, #Nino, #Elysia",
+        viewCount: 2387,
+    },
+    {
+        tittle: "Tokisaki Nino",
+        description: "This is my personal website. I will post my projects here. Hope you like it.",
+        urlImg: "./assets/image/Ai.jpg",
+        dayPost: "2023/12/17",
+        countView: "0",
+        linkSource: "https://nino.is-a.dev/",
+        hashTag: "#TokisakiNino, #Nino, #Ai",
+        viewCount: 3948,
     },
 
 
 ]
+
+const countPost = infor_posts.length;
+document.querySelector('.count_post').innerText = countPost;
+const linkAvatar = "./assets/image/Avt.jpg"
+
+function displayPosts(posts) {
+    let mainPostScroll = document.getElementById('main_post_scroll');
+
+    posts.forEach(post => {
+        let postElement = document.createElement('div');
+        postElement.innerHTML = `
+            <div class="post_item">
+                <div class="post_infor">
+                    <img src="${linkAvatar}" alt="avt" class="post">
+                    <div class="iuwyj">
+                        <div class="post_name">Tokisaki Nino</div>
+                        <div class="post_time">${post.dayPost}</div>
+                    </div>
+                </div>
+                <span class="tittle_post">${post.tittle}</span>
+                <p class="content_post">${post.description}</p>
+                <div class="post_img">
+                    <img src="${post.urlImg}" alt="avt">
+                </div>
+                <span class="hashtag">${post.hashTag}</span>
+                <div class="infor_post_">
+                    <div class="view_post">
+                        <ion-icon name="eye-outline"></ion-icon>
+                        <span class="count_views">${post.viewCount}</span>
+                    </div>
+                    <a class="source_post" href="${post.linkSource}" target="_blank">
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        `;
+        mainPostScroll.appendChild(postElement);
+    });
+}
+displayPosts(infor_posts);
+
+
+
+function countDays() {
+    // Ngày cố định (28/07/2021)
+    const startDate = new Date('2004-02-11');
+
+    // Ngày hiện tại
+    const currentDate = new Date();
+
+    // Tính số ngày chênh lệch
+    const timeDiff = currentDate.getTime() - startDate.getTime();
+    const daysDiff = Math.floor(timeDiff / (1000 * 3600 * 24));
+
+    // Hiển thị kết quả lên trang HTML
+    document.querySelector('.views').innerText =  daysDiff
+}
+countDays();
+
+
+// Path: assets/js/js_discord.js
+const userID = "906037896295878706";
+const colorStatus = document.querySelector(".status_discord");
+
+async function fetchDiscordStatus() {
+    try {
+        const response = await axios.get(
+            `https://api.lanyard.rest/v1/users/${userID}`
+            // `https://api.lanyard.rest/v1/users/906037896295878706`
+        );
+        
+        const { data } = response.data;
+        const { discord_status, activities } = data;
+
+        let backgroundColor;
+        switch (discord_status) {
+            case "online":
+                backgroundColor = "#00ff1e";
+                break;
+            case "idle":
+                backgroundColor = "#f5c904";
+                break;
+            case "dnd":
+                backgroundColor = "#f50408";
+                break;
+            case "offline":
+                backgroundColor = "rgb(103, 107, 103)";
+                break;
+            default:
+                backgroundColor = "rgb(225, 0, 255)";
+                break;
+        }
+
+        colorStatus.style.backgroundColor = backgroundColor;
+    } catch (error) {
+        console.error("Unable to get Discord status:", error);
+    }
+}
+
+// Gọi hàm để lấy và cập nhật trạng thái Discord
+fetchDiscordStatus();
+setInterval(fetchDiscordStatus, 1000);  // Interval là 10 giây, không cần gọi mỗi giây
