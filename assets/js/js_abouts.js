@@ -8,7 +8,7 @@ let infor_posts = [
         dayPost: "2023/12/17",
         countView: "0",
         linkSource: "https://nino.is-a.dev/",
-        hashTag: "#TokisakiNino, #Nino, #Elysia, #SimpsForElysia",
+        hashTag: "#TokisakiNino, #Nino, #Elysia, #SimpForElysia",
         viewCount: Math.floor(Math.random() * 2000),
     },
     {
@@ -119,12 +119,11 @@ function generateRandomNumber() {
 }
 setInterval(generateRandomNumber, 2000); // Chuyển màu sau mỗi 2 giây
 
+//Total view count
 let totalViewCount = 0;
-
 for (let post of infor_posts) {
     totalViewCount += post.viewCount;
 }
-
 document.getElementById("totalViewCount").innerHTML = totalViewCount;
 
 
