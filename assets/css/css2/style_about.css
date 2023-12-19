@@ -367,6 +367,8 @@ ul {
   margin: auto;
   padding: 30px;
   padding-top: 0px;
+
+  display: flex;
 }
 
 .post_item {
@@ -374,7 +376,7 @@ ul {
   padding: 20px;
   border-radius: 10px;
   margin: 20px auto;
-  /* border-bottom: 1px solid rgb(255, 0, 0); */
+  width: 50%;
 }
 .post_infor {
   display: flex;
@@ -437,6 +439,13 @@ div.infor_post_ {
 .source_post ion-icon:hover {
   color: rgb(0, 0, 0);
   font-weight: bold;
+}
+
+div.jhagi_elysia {
+  position: sticky;
+
+  display: flex;
+  flex-direction: column;
 }
 /*_________________________________________________ [ banner Elysia ] ____________________*/
 .img_banner_elysia {

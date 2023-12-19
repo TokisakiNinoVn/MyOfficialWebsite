@@ -50,7 +50,7 @@ document.querySelector('.count_post').innerText = countPost;
 const linkAvatar = "./assets/image/Avt.jpg"
 
 function displayPosts(posts) {
-    let mainPostScroll = document.getElementById('main_post_scroll');
+    let mainPostScroll = document.getElementById('items_scroll');
 
     posts.forEach(post => {
         let postElement = document.createElement('div');
@@ -88,7 +88,6 @@ displayPosts(infor_posts);
 
 
 function countDays() {
-    // Ngày cố định (28/07/2021)
     const startDate = new Date('2004-02-11');
 
     // Ngày hiện tại
@@ -108,14 +107,14 @@ countDays();
 const colorStatus = document.querySelector(".status_discord");
 
 function generateRandomNumber() {
-    var randomNumber_1 = Math.floor(Math.random() * 256);
-    var randomNumber_2 = Math.floor(Math.random() * 256);
-    var randomNumber_3 = Math.floor(Math.random() * 256);
+    var color_1 = Math.floor(Math.random() * 256);
+    var color_2 = Math.floor(Math.random() * 256);
+    var color_3 = Math.floor(Math.random() * 256);
 
     // Sử dụng anime.js để thực hiện hiệu ứng chuyển màu
     anime({
         targets: colorStatus,
-        backgroundColor: `rgb(${randomNumber_1}, ${randomNumber_2}, ${randomNumber_3})`,
+        backgroundColor: `rgb(${color_1}, ${color_2}, ${color_3})`,
         duration: 1000, // Thời gian chuyển màu (ms)
         easing: 'easeInOutQuad' // Kiểu chuyển động
     });
