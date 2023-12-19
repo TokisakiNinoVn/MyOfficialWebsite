@@ -370,7 +370,7 @@ div#main_post_scroll {
   justify-content: space-evenly;
 }
 div#items_scroll {
-  width: 60%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -420,7 +420,6 @@ div#items_scroll {
   max-width: 1100px;
   cursor: none;
 }
-
 .hashtag {
   color: rgb(0, 119, 255);
   margin: 10px;
@@ -461,13 +460,14 @@ div.jhagi_elysia {
   padding: 20px;
   max-width: 336px;
   border-radius: 10px;
-  width: 40%;
+  width: 50%;
 }
 .jhagi_elysia img {
   width: 100%;
   border-radius: 10px;
   max-height: 500px;
   transition: opacity 0.5s ease-in-out;
+  border: 3px double rgb(245, 69, 172);
 }
 
 .best_quotes {
@@ -479,19 +479,15 @@ div.jhagi_elysia {
 }
 /*_________________________________________________ [ banner Elysia ] ____________________*/
 .img_banner_elysia {
-  /* width: 100%; */
-  /* height: 300px; */
   object-fit: cover;
   border-radius: 10px;
   margin: auto;
-
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
 
   display: none;
-
 }
 /*_________________________________________________ [ Responsive ] ____________________*/
 @media (min-width: 1023px) {

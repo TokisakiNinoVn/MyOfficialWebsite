@@ -1,5 +1,5 @@
 /* <a href="" target="_blank" Here.</a> */
-const html_ = `<a href="https://www.pinterest.com/ninomemories/elysia/" target="_blank"> Here.</a>`
+const html_ = `<a href="https://www.pinterest.com/ninomemories/elysia/" target="_blank">🍀Here.</a>`
 let infor_posts = [
     {
         tittle: "[...]",
@@ -13,13 +13,13 @@ let infor_posts = [
     },
     {
         tittle: "[...]",
-        description: "Elysia Album Pinterest. >>" + html_,
+        description: "Elysia Album Pinterest. " + html_,
         urlImg: "https://pbs.twimg.com/media/F8T_VoEaEAAOqja?format=jpg&name=large",
         dayPost: "2023/12/17",
         countView: "0",
         linkSource: "https://nino.is-a.dev/",
         hashTag: "#TokisakiNino, #Nino, #Elysia",
-        viewCount: Math.floor(Math.random() * 10000),
+        viewCount: Math.floor(Math.random() * 1000),
     },
     {
         tittle: "Tokisaki Nino",
@@ -29,7 +29,7 @@ let infor_posts = [
         countView: "0",
         linkSource: "https://nino.is-a.dev/",
         hashTag: "#TokisakiNino, #Nino, #Elysia",
-        viewCount: 2387,
+        viewCount: Math.floor(Math.random() * 1000),
     },
     {
         tittle: "Tokisaki Nino",
@@ -39,10 +39,8 @@ let infor_posts = [
         countView: "0",
         linkSource: "https://nino.is-a.dev/",
         hashTag: "#TokisakiNino, #Nino, #Ai",
-        viewCount: 3948,
+        viewCount: Math.floor(Math.random() * 3000),
     },
-
-
 ]
 
 const countPost = infor_posts.length;
@@ -121,6 +119,13 @@ function generateRandomNumber() {
 }
 setInterval(generateRandomNumber, 2000); // Chuyển màu sau mỗi 2 giây
 
+let totalViewCount = 0;
+
+for (let post of infor_posts) {
+    totalViewCount += post.viewCount;
+}
+
+document.getElementById("totalViewCount").innerHTML = totalViewCount;
 
 
 
