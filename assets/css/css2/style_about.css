@@ -362,21 +362,21 @@ ul {
 .posts {
   width: 100vw;
 }
-#main_post_scroll {
+div#main_post_scroll {
   width: var(--max-witdh);
   margin: auto;
-  padding: 30px;
-  padding-top: 0px;
-
+  padding: 20px;
   display: flex;
+  justify-content: space-evenly;
 }
-
+div#items_scroll {
+  width: 60%;
+}
 .post_item {
   background-color: rgb(70, 70, 70);
   padding: 20px;
   border-radius: 10px;
-  margin: 20px auto;
-  width: 50%;
+  margin-bottom: 20px;
 }
 .post_infor {
   display: flex;
@@ -443,9 +443,29 @@ div.infor_post_ {
 
 div.jhagi_elysia {
   position: sticky;
-
+  top: 90px;
+  background-color: rgb(70, 70, 70);
   display: flex;
+  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  max-height: 700px;
+  padding: 20px;
+  max-width: 336px;
+  border-radius: 10px;
+  width: 40%;
+}
+.jhagi_elysia img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.best_quotes {
+  margin: 20px auto;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 0, 255);
+  text-align: center;
 }
 /*_________________________________________________ [ banner Elysia ] ____________________*/
 .img_banner_elysia {
