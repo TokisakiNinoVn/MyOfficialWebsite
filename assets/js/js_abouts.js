@@ -14,7 +14,6 @@ function generateRandomNumber() {
     var color_1 = Math.floor(Math.random() * 256);
     var color_2 = Math.floor(Math.random() * 256);
     var color_3 = Math.floor(Math.random() * 256);
-
     // Sử dụng anime.js để thực hiện hiệu ứng chuyển màu
     anime({
         targets: colorStatus,
@@ -26,7 +25,19 @@ function generateRandomNumber() {
 setInterval(generateRandomNumber, 2000); // Chuyển màu sau mỗi 2 giây
 
 
-
+//Like icon ___________________________________________________________________________
+const likeBtn_Click = document.getElementById("like_like");
+const likeIcon_false = document.querySelector(".like_false");
+const likeIcon_true = document.querySelector(".like_true");
+likeBtn_Click.addEventListener("click", function () {
+    if (likeIcon_false.classList.contains("active")) {
+        likeIcon_false.classList.remove("active");
+        likeIcon_true.classList.add("active");
+    } else {
+        likeIcon_false.classList.add("active");
+        likeIcon_true.classList.remove("active");
+    }
+});
 
 //Display basic information or Posts ___________________________________________________________________________
 const basicInformation_Click = document.getElementById("basic_status");
@@ -36,11 +47,6 @@ const mainPosts = document.querySelector(".posts");
 const bannerElysia = document.querySelector(".img_banner_elysia");
 
 document.addEventListener("DOMContentLoaded", function () { 
-    // const likeBtn_Click = document.getElementById("like_like");
-    // likeBtn_Click.addEventListener("click", function () {
-    //     bannerElysia.classList.toggle("active");
-    // });
-
     basicInformation_Click.addEventListener("click", function () {
         mainInformation.classList.add("active");
         basicInformation_Click.classList.add("active_");
