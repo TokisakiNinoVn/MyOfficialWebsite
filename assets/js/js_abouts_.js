@@ -29,5 +29,4 @@ function changeImage() {
         imgElement.style.opacity = 1; // Đặt opacity về 1 sau khi thay đổi ảnh
     }, 300); // Đợi 0.5 giây trước khi thay đổi ảnh để hiệu ứng fade có thể hoạt động
 }
-
 setInterval(changeImage, intervalTime);
