@@ -1,5 +1,3 @@
-/* <a href="" target="_blank" Here.</a> */
-
 
 function countDays() {
     const startDate = new Date('2004-02-11');
@@ -10,8 +8,7 @@ function countDays() {
 }
 countDays();
 
-
-// Radom color
+// Radom color ___________________________________________________________________________
 const colorStatus = document.querySelector(".status_discord");
 function generateRandomNumber() {
     var color_1 = Math.floor(Math.random() * 256);
@@ -29,26 +26,31 @@ function generateRandomNumber() {
 setInterval(generateRandomNumber, 2000); // Chuyển màu sau mỗi 2 giây
 
 
-//Total view count
-let totalViewCount = 0;
-for (let post of infor_posts) {
-    totalViewCount += post.viewCount;
-}
-document.getElementById("totalViewCount").innerHTML = totalViewCount;
 
 
+//Display basic information or Posts ___________________________________________________________________________
+const basicInformation_Click = document.getElementById("basic_status");
+const posts_Click = document.getElementById("post_status");
+const mainInformation = document.querySelector(".basic_infor");
+const mainPosts = document.querySelector(".posts");
+const bannerElysia = document.querySelector(".img_banner_elysia");
 
+document.addEventListener("DOMContentLoaded", function () { 
+    const likeBtn_Click = document.getElementById("like_like");
+    likeBtn_Click.addEventListener("click", function () {
+        bannerElysia.classList.toggle("active");
+    });
 
-
-
-
-
-
-
-
-
-
-
+    basicInformation_Click.addEventListener("click", function () {
+        mainInformation.classList.add("active");
+        mainPosts.classList.remove("active");
+    });
+    
+    posts_Click.addEventListener("click", function () {
+        mainInformation.classList.remove("active");
+        mainPosts.classList.add("active");
+    });
+});
 
 
 
@@ -59,7 +61,7 @@ document.getElementById("totalViewCount").innerHTML = totalViewCount;
 //             `https://api.lanyard.rest/v1/users/${userID}`
 //             // `https://api.lanyard.rest/v1/users/906037896295878706`
 //         );
-        
+
 //         const { data } = response.data;
 //         const { discord_status, activities } = data;
 

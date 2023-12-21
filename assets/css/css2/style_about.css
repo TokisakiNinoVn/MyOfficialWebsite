@@ -46,7 +46,9 @@ html {
   background-color: var(--white);
 }
 
-
+.active {
+  display: flex !important;
+}
 /*_________________________________________________ [ Style ] ____________________*/
 ::-webkit-scrollbar {
   width: 0px;
@@ -242,10 +244,7 @@ ul {
   justify-content: space-around;
   align-items: center;
   margin: 10px 5px;
-  /* padding-bottom: 5px; */
-
   border-bottom: 1px solid rgb(147, 148, 148);
-
 }
 .menu_options li {
   cursor: pointer;
@@ -361,6 +360,7 @@ ul {
 /*_________________________________________________ [ Posts ] ____________________*/
 .posts {
   width: 100vw;
+  display: none;
 }
 div#main_post_scroll {
   width: var(--max-witdh);

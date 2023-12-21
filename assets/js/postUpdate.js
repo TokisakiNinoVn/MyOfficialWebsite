@@ -1,3 +1,5 @@
+/* <a href="" target="_blank" Here.</a> */
+
 const html_ = `<a href="https://www.pinterest.com/ninomemories/elysia/" target="_blank">🍀Here.</a>`
 const iwe = ` 🪶`
 let infor_posts = [
@@ -105,3 +107,10 @@ function imageOrmp3(url) {
         return `<img src = "${url}" alt = "avt">`;
     }
 }
+
+//Total view count ___________________________________________________________________________
+let totalViewCount = 0;
+for (let post of infor_posts) {
+    totalViewCount += post.viewCount;
+}
+document.getElementById("totalViewCount").innerHTML = totalViewCount;
