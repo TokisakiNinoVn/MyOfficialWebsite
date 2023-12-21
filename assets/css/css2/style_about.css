@@ -49,6 +49,11 @@ html {
 .active {
   display: flex !important;
 }
+
+.active_ {
+  color: rgb(216, 106, 183);
+  font-weight: bold;
+}
 /*_________________________________________________ [ Style ] ____________________*/
 ::-webkit-scrollbar {
   width: 0px;

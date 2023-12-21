@@ -4,7 +4,7 @@ function countDays() {
     const currentDate = new Date();
     const timeDiff = currentDate.getTime() - startDate.getTime();
     const daysDiff = Math.floor(timeDiff / (1000 * 3600 * 24));
-    document.querySelector('.views').innerText =  daysDiff
+    //document.querySelector('.views').innerText =  daysDiff + " days";
 }
 countDays();
 
@@ -36,19 +36,23 @@ const mainPosts = document.querySelector(".posts");
 const bannerElysia = document.querySelector(".img_banner_elysia");
 
 document.addEventListener("DOMContentLoaded", function () { 
-    const likeBtn_Click = document.getElementById("like_like");
-    likeBtn_Click.addEventListener("click", function () {
-        bannerElysia.classList.toggle("active");
-    });
+    // const likeBtn_Click = document.getElementById("like_like");
+    // likeBtn_Click.addEventListener("click", function () {
+    //     bannerElysia.classList.toggle("active");
+    // });
 
     basicInformation_Click.addEventListener("click", function () {
         mainInformation.classList.add("active");
+        basicInformation_Click.classList.add("active_");
         mainPosts.classList.remove("active");
+        posts_Click.classList.remove("active_");
     });
     
     posts_Click.addEventListener("click", function () {
         mainInformation.classList.remove("active");
+        basicInformation_Click.classList.remove("active_");
         mainPosts.classList.add("active");
+        posts_Click.classList.add("active_");
     });
 });
 

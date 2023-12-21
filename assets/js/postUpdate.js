@@ -1,7 +1,11 @@
 /* <a href="" target="_blank" Here.</a> */
+/* <b></b> */
+/* <br> */
+/* <i></i> */
 
 const html_ = `<a href="https://www.pinterest.com/ninomemories/elysia/" target="_blank">🍀Here.</a>`
 const iwe = ` 🪶`
+const linkNino = "https://nino.is-a.dev/"
 let infor_posts = [
     {
         tittle: "Christmas wishes 2023!",
@@ -9,7 +13,7 @@ let infor_posts = [
         urlImg: "https://pbs.twimg.com/media/GA4VuctasAA3j2U?format=jpg&name=large",
         dayPost: "2023/12/24" + iwe,
         countView: "0",
-        linkSource: "https://nino.is-a.dev/",
+        linkSource: linkNino,
         hashTag: "#TokisakiNino, #Nino, #Elysia, #SimpForElysia, #MerryChristmas, #HappyNewYear, #2023",
         viewCount: Math.floor(Math.random() * 2000),
     },
@@ -19,7 +23,7 @@ let infor_posts = [
         urlImg: "./assets/image/mwsi.mp4",
         dayPost: "2023/12/21" + iwe,
         countView: "0",
-        linkSource: "https://nino.is-a.dev/",
+        linkSource: linkNino,
         hashTag: "#TokisakiNino, #Nino",
         viewCount: Math.floor(Math.random() * 2000),
     },
@@ -29,7 +33,7 @@ let infor_posts = [
         urlImg: "https://pbs.twimg.com/media/F8T_VoEaEAAOqja?format=jpg&name=large",
         dayPost: "2023/12/17" + iwe,
         countView: "0",
-        linkSource: "https://nino.is-a.dev/",
+        linkSource: linkNino,
         hashTag: "#TokisakiNino, #Nino, #Elysia",
         viewCount: Math.floor(Math.random() * 1000),
     },
@@ -39,7 +43,7 @@ let infor_posts = [
         urlImg: "./assets/image/Elysia_.jpg",
         dayPost: "2023/12/17" + iwe,
         countView: "0",
-        linkSource: "https://nino.is-a.dev/",
+        linkSource: linkNino,
         hashTag: "#TokisakiNino, #Nino, #Elysia",
         viewCount: Math.floor(Math.random() * 1000),
     },
@@ -49,14 +53,17 @@ let infor_posts = [
         urlImg: "./assets/image/Ai.jpg",
         dayPost: "2023/12/17" + iwe,
         countView: "0",
-        linkSource: "https://nino.is-a.dev/",
+        linkSource: linkNino,
         hashTag: "#TokisakiNino, #Nino, #Ai",
         viewCount: Math.floor(Math.random() * 3000),
     },
 ]
 
+//Total Posts ___________________________________________________________________________
 const countPost = infor_posts.length;
-document.querySelector('.count_post').innerText = countPost;
+document.querySelector('.count_post').innerText = `[`+ countPost + "]";
+
+
 const linkAvatar = "./assets/image/Avt.jpg"
 function displayPosts(posts) {
     let mainPostScroll = document.getElementById('items_scroll');
@@ -68,7 +75,7 @@ function displayPosts(posts) {
                 <div class="post_infor">
                     <img src="${linkAvatar}" alt="avt" class="post">
                     <div class="iuwyj">
-                        <div class="post_name">Tokisaki Nino</div>
+                        <div class="post_name">Tokisaki Nino✏️</div>
                         <div class="post_time">${post.dayPost}</div>
                     </div>
                 </div>
@@ -113,4 +120,4 @@ let totalViewCount = 0;
 for (let post of infor_posts) {
     totalViewCount += post.viewCount;
 }
-document.getElementById("totalViewCount").innerHTML = totalViewCount;
+document.getElementById("totalViewCount").innerHTML = `[`+ totalViewCount + "]";
