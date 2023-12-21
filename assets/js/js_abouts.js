@@ -132,7 +132,6 @@ document.addEventListener("DOMContentLoaded", function () {
             likeIcon_true.classList.remove("active");
             bannerElysia.classList.remove("active");
             like_status = false;
-
             pauseAudio();
         }
     });
