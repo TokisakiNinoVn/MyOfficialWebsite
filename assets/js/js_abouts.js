@@ -78,6 +78,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const controlVolume = document.querySelector(".control_volume");
     const muteVolumeTrue = document.querySelector(".mute_volume-true");
     const muteVolumeFalse = document.querySelector(".mute_volume-false");
+
+    const click_viewTool = document.querySelector(".weiurf");
+    const toolStatus_hiden = document.querySelector(".hidden_control");
+    const toolStatus_view = document.querySelector(".view_control");
+    const toolStatus = document.querySelector(".qiouw");
+    var tool_status = false;
     
     const true_audioLink = new Audio("./assets/audio/True.mp3");
     var like_status = false;
@@ -127,6 +133,11 @@ document.addEventListener("DOMContentLoaded", function () {
             play_audio.classList.remove("active");
             pause_audio.classList.add("active");
             volume_status = true;
+
+            toolStatus.classList.add("tranform");
+            tool_status = true;
+            toolStatus_hiden.classList.add("active");
+            toolStatus_view.classList.remove("active");
         } else {
             likeIcon_false.classList.add("active");
             likeIcon_true.classList.remove("active");
@@ -161,8 +172,23 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    click_viewTool.addEventListener("click", function () {
+        if (tool_status == false) {
+            toolStatus_hiden.classList.add("active");
+            toolStatus_view.classList.remove("active");
+            toolStatus.classList.add("tranform");
+            tool_status = true;
+        } else {
+            toolStatus_hiden.classList.remove("active");
+            toolStatus_view.classList.add("active");
+            toolStatus.classList.remove("tranform");
+            tool_status = false;
+        }
+    })
+
     function playAudio() {
         true_audioLink.play();
+        true_audioLink.volume = 0.1;
         play_audio.classList.remove("active");
         pause_audio.classList.add("active");
     }

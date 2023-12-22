@@ -443,11 +443,10 @@ div#items_scroll {
 .post_img img {
   border-radius: 10px;
   object-fit: cover;
-  /* margin-bottom: 10px; */
   max-height: 320px;
-  max-width: 1100px;
+  max-width: 570px;
+  width: 90%;
   cursor: none;
-  
 }
 .hashtag {
   color: rgb(0, 119, 255);
@@ -467,7 +466,7 @@ div.infor_post_ {
   align-items: center;
 }
 .count_views {
-  font-size: 20px;
+  font-size: 16px;
   margin-left: 10px;
 }
 .source_post {
@@ -537,23 +536,27 @@ img.img_banner {
 .main_ely:hover div.tool_ely_active {
   display: flex;
 }
+.qiouw {
+  position: fixed;
+  left: -180px;
+  bottom: 0px;
+  z-index: 999;
+  height: 54px;
+  /* border-top-right-radius: 10px; */
+  transition: color 0.3s ease-in-out;
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: linear-gradient(90deg, #A100FFFF 0%, #71C4FFFF 100%);
+}
 
 div.tool_ely {
-  width: 90%;
-  height: 100px;
-  position: absolute;
-  bottom: 0px;
-  left: 61px;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(0deg, rgba(231,0,255,1) 0%, rgba(205,0,255,0) 100%);
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-
-  display: none;
-  transition: color 0.3s ease-in-out;
+  height: 100%;
+  position: relative;
 }
 
 .tool_ely ion-icon {
@@ -581,9 +584,34 @@ div.tool_ely {
 .play_icon {
 
 }
-
 .contr_volumeicon {
   display: none;
+}
+.weiurf {
+  position: absolute;
+  top: 0px;
+  right: -50px;
+  width: 54px;
+  height: 54px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgb(0, 242, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden_control {
+  display: none;
+}
+
+.hidden_control {
+  padding: 4px;
+  background-color: rgb(0, 242, 255);
+  border-radius: 50%;
+}
+
+.tranform {
+  transform: translateX(180px);
 }
 /*_________________________________________________ [ Responsive ] ____________________*/
 
@@ -606,10 +634,6 @@ div.tool_ely {
 @media (max-width: 1024px) {
   .name_basic {
     height: 130px;
-  }
-
-  div.tool_ely {
-    left: 51px;
   }
 }
 
@@ -712,9 +736,6 @@ div.tool_ely {
     padding: 0px;
   }
 
-  div.tool_ely {
-    left: 38px;
-  }
 }
 
 @media (max-width: 510px) {
@@ -755,9 +776,6 @@ div.tool_ely {
   .iuwyj .post_name {
     font-size: 13px;
   }
-  div.tool_ely {
-    left: 20px;
-  }
 }
 
 @media (max-width: 320px) {
@@ -775,10 +793,6 @@ div.tool_ely {
 
   .pronuns {
     margin: 10px auto;
-  }
-
-  div.tool_ely {
-    left: 16px;
   }
 }
 
