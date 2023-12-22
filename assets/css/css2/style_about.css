@@ -719,16 +719,33 @@ div.tool_ely {
   div#main_about_scroll-parent {
     padding: 10px;
   }
+
+  .main_about_scroll-child {
+    padding: 10px;
+  }
   .true_name {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  .menu_options li {
+  .menu_options li,
+  .content_post, 
+  .iuwyj .post_time {
     font-size: 13px;
   }
   .post_item {
     padding: 10px;
+  }
+  .post_infor img {
+    width: 50px;
+  }
+  .tittle_post,
+  .hashtag,
+  .count_views {
+    font-size: 14px;
+  }
+  .iuwyj .post_name {
+    font-size: 13px;
   }
 }
 
