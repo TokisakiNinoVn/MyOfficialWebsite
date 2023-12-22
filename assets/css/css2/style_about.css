@@ -607,6 +607,10 @@ div.tool_ely {
   .name_basic {
     height: 130px;
   }
+
+  div.tool_ely {
+    left: 51px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -707,6 +711,10 @@ div.tool_ely {
   div#main_post_scroll {
     padding: 0px;
   }
+
+  div.tool_ely {
+    left: 38px;
+  }
 }
 
 @media (max-width: 510px) {
@@ -747,6 +755,9 @@ div.tool_ely {
   .iuwyj .post_name {
     font-size: 13px;
   }
+  div.tool_ely {
+    left: 20px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -766,7 +777,9 @@ div.tool_ely {
     margin: 10px auto;
   }
 
-
+  div.tool_ely {
+    left: 16px;
+  }
 }
 
 
