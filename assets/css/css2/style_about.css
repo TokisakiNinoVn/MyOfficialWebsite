@@ -45,6 +45,9 @@ a {
 .navbar {
   z-index: 100;
 }
+.menu-navbar-right {
+  width: unset !important;
+}
 
 .light-mode .container {
   background-color: var(--white);
