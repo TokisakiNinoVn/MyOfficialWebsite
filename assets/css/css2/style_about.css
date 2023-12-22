@@ -444,8 +444,8 @@ div#items_scroll {
   border-radius: 10px;
   object-fit: cover;
   max-height: 320px;
-  max-width: 570px;
-  width: 90%;
+  /* max-width: 570px; */
+  /* width: 90%; */
   cursor: none;
 }
 .hashtag {
