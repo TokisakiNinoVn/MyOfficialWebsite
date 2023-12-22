@@ -37,6 +37,10 @@ body {
 html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+a {
+  text-decoration: none;
+  color: unset;
+}
 
 .navbar {
   z-index: 100;
@@ -184,7 +188,7 @@ ul {
 .nick_name {
   font-size: 20px;
   line-height: 20px;
-
+  font-weight: lighter;
 }
 
 .weiu {
@@ -206,7 +210,7 @@ ul {
   cursor: pointer;
 
 }
-.more_options div {
+.more_options a, .like {
   padding: 8px 10px;
   border-radius: 5px;
   background-color: rgb(110, 109, 109);
@@ -219,7 +223,6 @@ ul {
 }
 .follow_icon {
   margin-right: 5px;
-
 }
 .like {
   margin-left: 10px;
@@ -237,10 +240,8 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   background-color: rgb(43, 41, 41);
   border-radius: 10px;
-
 }
 
 .menu_options {
@@ -370,6 +371,10 @@ ul {
 }
 .code_color_yellow {
   color: rgb(255, 187, 0);
+}
+
+.code_descript {
+  display: flex;
 }
 
 /*_________________________________________________ [ Posts ] ____________________*/
@@ -582,22 +587,140 @@ div.tool_ely {
 }
 /*_________________________________________________ [ Responsive ] ____________________*/
 
-@media (min-width: 1023px) {
+@media (max-width: 1260px) {
+  div#main_about_scroll-parent {
+    padding: 10px 20px;
+  }
+  .main_about_scroll-child {
+    width: 100%;
+  }
 
+  div.name_basic {
+    padding: 10px 20px;
+  }
+  .name_center {
+    width: 100%;
+  }
 }
+
+@media (max-width: 1024px) {
+  .name_basic {
+    height: 130px;
+  }
+}
+
 @media (max-width: 950px) {
-}
-
-@media (max-width: 730px) {
 
 }
 
-@media (max-width: 475px) {
-  
+@media (max-width: 768px) {
+  .background_img {
+    height: 200px;
+  }
+  .name_basic {
+    height: 230px;
+    padding: 20px;
+  }
+  .name_center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px;
+  }
+  .name_left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .true-nick_name {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .img_avatar {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .img_avatar {
+    --x: 130px;
+    width: var(--x);
+  }
+  .frame_avatar {
+    --x: 160px;
+    width: var(--x);
+    left: -14px;
+    top: -18px;
+  }
+
+  .status_discord {
+    bottom: 15px;
+    --xy: 30px;
+    width: var(--xy);
+    height: var(--xy);
+  }
+
+  .basic_infor {
+    width: 100%;
+  }
+  .iuwk_iag  {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .infor_content_1 {
+    width: 100%;
+    margin: 0px;
+    margin-top: 20px;
+  }
+  .card_information_code {
+    margin: 0px;
+    width: 100%;
+  }
+  .card_top,
+  .card_bottom {
+    width: 100%;
+  }
+
+  .card_information {
+    width: unset;
+    font-size: 14px;
+  }
+  .card_top ul li {
+    --xy: 18px;
+  }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 510px) {
+  .nick_name {
+    display: block;
+  }
+}
+@media (max-width: 425px) {
+  div#main_about_scroll-parent {
+    padding: 10px;
+  }
+  .menu_options li {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px) {
   html {
+  }
+  .card_information_code {
+    font-size: 10px;
+  }
+  .pronuns,
+  .weiu,
+  .quotes_nino,
+  a.more_options_ {
+    font-size: 13px;
+  }
+
+  .pronuns {
+    margin: 10px auto;
   }
 }
 
