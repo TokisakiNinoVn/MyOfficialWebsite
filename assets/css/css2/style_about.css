@@ -379,7 +379,7 @@ ul {
 
 /*_________________________________________________ [ Posts ] ____________________*/
 .posts {
-  width: 100vw;
+  width: 100%;
   display: none;
 }
 div#main_post_scroll {
@@ -609,8 +609,16 @@ div.tool_ely {
   }
 }
 
-@media (max-width: 950px) {
-
+@media (max-width: 900px) {
+  div#main_post_scroll {
+    width: 100%;
+  }
+  div#items_scroll {
+    width: 100%;
+  }
+  div.jhagi_elysia {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -690,19 +698,37 @@ div.tool_ely {
   .card_top ul li {
     --xy: 18px;
   }
+
+  .post_img img,
+  .post_img video {
+    max-width: 100%;
+  }
+
+  div#main_post_scroll {
+    padding: 0px;
+  }
 }
 
 @media (max-width: 510px) {
   .nick_name {
     display: block;
+    margin: auto;
   }
 }
 @media (max-width: 425px) {
   div#main_about_scroll-parent {
     padding: 10px;
   }
+  .true_name {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
   .menu_options li {
     font-size: 13px;
+  }
+  .post_item {
+    padding: 10px;
   }
 }
 
@@ -722,6 +748,8 @@ div.tool_ely {
   .pronuns {
     margin: 10px auto;
   }
+
+
 }
 
 
