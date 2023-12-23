@@ -257,11 +257,14 @@ ul {
 }
 .menu_options li {
   cursor: pointer;
-  padding: 0px 0px 10px 0px;
+  padding: 0px 10px 10px 10px;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.3s ease-out;
 }
 .menu_options li:hover {
+  border-bottom: 3px solid rgb(255, 0, 221);
+}
+.menu_options li.active_ {
   border-bottom: 3px solid rgb(255, 0, 221);
 }
 
@@ -446,9 +449,9 @@ div#items_scroll {
 .post_img img {
   border-radius: 10px;
   object-fit: cover;
-  max-height: 320px;
-  /* max-width: 570px; */
-  /* width: 90%; */
+  max-height: 350px;
+  width: 90%;
+  max-width: 570px;
   cursor: none;
 }
 .hashtag {
@@ -457,7 +460,9 @@ div#items_scroll {
   cursor: pointer;
   font-weight: bold;
 }
-
+.post_img video {
+  max-width: 100%;
+}
 div.infor_post_ {
   display: flex;
   align-items: center;
