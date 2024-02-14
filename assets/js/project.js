@@ -24,10 +24,15 @@ let infor_project = [
         img: "./assets/image/Ai.jpg",
         name: "Honkai Star Rail Loading HTML-CSS",
     },
-        {
+    {
         url: "https://nino.is-a.dev/FreeStickersHoyolab/",
         img: "./assets/image/Ai.jpg",
         name: "Free sticker Hoyolab to use Discord",
+    },
+        {
+        url: "https://nino.is-a.dev/Valentine_UwU/",
+        img: "./assets/image/Ai.jpg",
+        name: "Valentine 2024 | Nino & Yu",
     },
 
 
