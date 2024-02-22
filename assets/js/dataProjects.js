@@ -1,6 +1,6 @@
 const infor_project = [
     {
-        flagNumber: 1,
+        flagNumber: 2,
         linkView: "https://nino.is-a.dev/",
         img: "./assets/image/Elysia/_horizontal/Elysia(1).jpg",
         dateDev: "2023-11-02",
@@ -10,7 +10,7 @@ const infor_project = [
         language: "HTML, CSS, JS",        
     },
     {
-        flagNumber: 2,
+        flagNumber: 3,
         linkView: "https://nino.is-a.dev/MyOfficialWebsite/",
         img: "./assets/image/Elysia/_horizontal/Elysia(1).jpg",
         dateDev: "2023-",
