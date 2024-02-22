@@ -24,7 +24,7 @@ const infor_project = [
     {
         flagNumber: 2,
         linkView: "https://nino.is-a.dev/MyGameServiceWebsite/",
-        img: "../assets/image/HoshinoAi/horizontal/HoshinoAi(3).jpg",
+        img: "./assets/image/HoshinoAi/horizontal/HoshinoAi(3).jpg",
         dateDev: "2023-11-24",
         source: "#",
         name: "My Game Service Website",
@@ -35,7 +35,7 @@ const infor_project = [
     {
         flagNumber: 3,
         linkView: "https://nino.is-a.dev/CharacterChampionsLeague/",
-        img: "../assets/image/HoshinoAi/horizontal/HoshinoAi(4).jpg",
+        img: "./assets/image/HoshinoAi/horizontal/HoshinoAi(4).jpg",
         dateDev: "2023-11-24",
         source: "#",
         name: "Character Champions League",
@@ -46,7 +46,7 @@ const infor_project = [
     {
         flagNumber: 2,
         linkView: "https://nino.is-a.dev/HonkaiStarRailLoadingHTML-CSS/",
-        img: "../assets/image/HoshinoAi/horizontal/HoshinoAi(5).jpg",
+        img: "./assets/image/HoshinoAi/horizontal/HoshinoAi(5).jpg",
         dateDev: "2023-11-24",
         source: "#",
         name: "Honkai Star Rail Loading HTML-CSS",
@@ -57,7 +57,7 @@ const infor_project = [
     {
         flagNumber: 3,
         linkView: "https://nino.is-a.dev/FreeStickersHoyolab/",
-        img: "../assets/image/HoshinoAi/horizontal/HoshinoAi(6).jpg",
+        img: "./assets/image/HoshinoAi/horizontal/HoshinoAi(6).jpg",
         dateDev: "2023-11-24",
         source: "#",
         name: "Free sticker Hoyolab to use Discord",
@@ -68,7 +68,7 @@ const infor_project = [
     {
         flagNumber: 2,
         linkView: "https://nino.is-a.dev/Valentine_UwU/",
-        img: "../assets/image/HoshinoAi/horizontal/HoshinoAi(7).jpg",
+        img: "./assets/image/HoshinoAi/horizontal/HoshinoAi(7).jpg",
         dateDev: "2023-11-24",
         source: "#",
         name: "Valentine 2024 | Nino & Yu",
