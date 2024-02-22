@@ -2,7 +2,7 @@ const infor_project = [
     {
         flagNumber: 2,
         linkView: "https://nino.is-a.dev/", //1
-        img: "./assets/image/HoshinoAi/_horizontal/HoshinoAi(1).jpg", //2
+        img: "../assets/image/HoshinoAi/_horizontal/HoshinoAi(1).jpg", //2
         dateDev: "2023-11-02", // 3
         source: "", //4
         name: "My Card Information", //5
@@ -13,7 +13,7 @@ const infor_project = [
     {
         flagNumber: 3,
         linkView: "https://nino.is-a.dev/MyOfficialWebsite/",
-        img: "./assets/image/HoshinoAi/_horizontal/HoshinoAi(2).jpg",
+        img: "../assets/image/HoshinoAi/_horizontal/HoshinoAi(2).jpg",
         dateDev: "2023-11-24",
         source: "#",
         name: "My official website",
@@ -24,7 +24,7 @@ const infor_project = [
     {
         flagNumber: 2,
         linkView: "https://nino.is-a.dev/MyGameServiceWebsite/",
-        img: "./assets/image/HoshinoAi/_horizontal/HoshinoAi(3).jpg",
+        img: "../assets/image/HoshinoAi/_horizontal/HoshinoAi(3).jpg",
         dateDev: "2023-11-24",
         source: "#",
         name: "My Game Service Website",
@@ -46,7 +46,7 @@ const infor_project = [
     {
         flagNumber: 2,
         linkView: "https://nino.is-a.dev/HonkaiStarRailLoadingHTML-CSS/",
-        img: "./assets/image/HoshinoAi/_horizontal/HoshinoAi(5).jpg",
+        img: "../assets/image/HoshinoAi/_horizontal/HoshinoAi(5).jpg",
         dateDev: "2023-11-24",
         source: "#",
         name: "Honkai Star Rail Loading HTML-CSS",
@@ -57,7 +57,7 @@ const infor_project = [
     {
         flagNumber: 3,
         linkView: "https://nino.is-a.dev/FreeStickersHoyolab/",
-        img: "./assets/image/HoshinoAi/_horizontal/HoshinoAi(6).jpg",
+        img: "../assets/image/HoshinoAi/_horizontal/HoshinoAi(6).jpg",
         dateDev: "2023-11-24",
         source: "#",
         name: "Free sticker Hoyolab to use Discord",
@@ -67,8 +67,8 @@ const infor_project = [
     },
     {
         flagNumber: 2,
-        linkView: "",
-        img: "./assets/image/HoshinoAi/_horizontal/HoshinoAi(7).jpg",
+        linkView: "https://nino.is-a.dev/Valentine_UwU/",
+        img: "../assets/image/HoshinoAi/_horizontal/HoshinoAi(7).jpg",
         dateDev: "2023-11-24",
         source: "#",
         name: "Valentine 2024 | Nino & Yu",
@@ -81,7 +81,7 @@ const infor_project = [
 
     // {
     //     flagNumber: ,
-    //     linkView: "https://nino.is-a.dev/Valentine_UwU/",
+    //     linkView: "",
     //     img: "./assets/image/HoshinoAi/_horizontal/HoshinoAi(5).jpg",
     //     dateDev: "2023-11-24",
     //     source: "#",
