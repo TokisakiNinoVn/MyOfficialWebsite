@@ -2,7 +2,7 @@ const infor_project = [
     {
         flagNumber: 2,
         linkView: "https://nino.is-a.dev/",
-        img: "../assets/image/HoshinoAi/_horizontal/HoshinoAi(1).jpg",
+        img: "./MyOfficialWebsite/assets/image/HoshinoAi/_horizontal/HoshinoAi(1).jpg",
         dateDev: "2023-11-02", 
         source: "",
         name: "My Card Information",
@@ -13,7 +13,7 @@ const infor_project = [
     {
         flagNumber: 3,
         linkView: "https://nino.is-a.dev/MyOfficialWebsite/",
-        img: "../assets/image/HoshinoAi/_horizontal/HoshinoAi(2).jpg",
+        img: "./assets/image/HoshinoAi/_horizontal/HoshinoAi(2).jpg",
         dateDev: "2023-11-24",
         source: "#",
         name: "My official website",
