@@ -28,34 +28,47 @@ span.title {
     text-shadow: rgba(193, 176, 176, 0.956) 0px 5px 15px;
 }
 
-.light-mode span.title {
-    color:rgb(0, 0, 0);
-    text-shadow: rgba(200, 64, 64, 0.956) 0px 5px 15px;
-}
-
 .project {
-    width: 96vw;
+    width: 100vw;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+.card_profile {
+    background-color: aliceblue;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+/* ul.contacts li {
+} */
+ul.contacts li a {
+    color: black;
+    display: flex;
+}
+ul.contacts li ion-icon {
+    font-size: 50px;
+}
+.list_project {
+    width: 700px;
+    display: flex;
     justify-content: center;
     padding: 10px;
 }
 
-.list_project {
-    position: relative;
-    margin: 20px;
+.item_project {
+    width: 100%;
 }
 
 img.preview {
     width: 300px;
-    border-radius: 10px;
+    /* border-radius: 10px;
     border: 2px double rgb(235, 28, 231);
-    box-shadow: rgba(255, 83, 3, 0.842) 0px 5px 15px;
+    box-shadow: rgba(255, 83, 3, 0.842) 0px 5px 15px; */
 }
 
 .div_link {
-    width: 100%;
+    /* width: 100%;
     height: 98%;
     display: flex;
     justify-content: center;
@@ -67,25 +80,25 @@ img.preview {
 
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
 }
 
-.div_link:hover {
+/* .div_link:hover {
     background-color: rgba(0, 0, 0, 0.345);
     opacity: 1;
-}
+} */
 
-.list_project:nth-child(1) {
+.item_project:nth-child(1) {
     display: none;
 }
 
 a.link_project {
+    background-color: rgb(251, 251, 251);
     text-decoration: none;
     text-align: center;
-    background-color: rgb(251, 251, 251);
     color: black;
     padding: 10px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     font-weight: bold;
 }
 a.link_project:hover {

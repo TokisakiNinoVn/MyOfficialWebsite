@@ -40,7 +40,9 @@ body {
   color:var(--black); /* Màu chữ khi bôi đen */
 }
 
-
+ul, li {
+  list-style: none;
+}
 
 /*______________ [ light-mode ] _____________________________________________________________________*/
 body.light-mode  {
