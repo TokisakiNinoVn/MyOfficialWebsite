@@ -27,7 +27,7 @@ const infor_posts = [
         dayPost: "2023/12/21" + textEditors[1],
         countView: "0",
         linkSource: textEditors[0],
-        hashTag: "#TokisakiNino, #Nino",
+        hashTag: "#TokisakiNino, #Nino, #Douyin",
         viewCount: Math.floor(Math.random() * 2000),
     },
     {

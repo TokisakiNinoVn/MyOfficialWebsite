@@ -1,3 +1,4 @@
+// Html editor
 // <a href="" target="_blank" Here.</a>
 // <b></b>
 // <br> 
@@ -11,6 +12,11 @@ const textEditors = [
     `<a href="https://pbs.twimg.com/media/GECXTnRbYAALhui?format=jpg&name=large" target="_blank">🍀Here.</a>`,
     `<a href="https://www.pinterest.com/ninomemories/elysia/" target="_blank">🍀Here.</a>`,
     `<a href="https://pbs.twimg.com/media/GECXTnRbYAALhui?format=jpg&name=large" target="_blank">🍀Here.</a>`,
+    
+
+
+
+    
 ]
 
 export { textEditors }
