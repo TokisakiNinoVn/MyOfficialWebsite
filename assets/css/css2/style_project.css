@@ -88,9 +88,9 @@ img.preview {
     opacity: 1;
 } */
 
-.item_project:nth-child(1) {
+/* .item_project:nth-child(1) {
     display: none;
-}
+} */
 
 a.link_project {
     background-color: rgb(251, 251, 251);
