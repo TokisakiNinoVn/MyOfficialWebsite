@@ -54,6 +54,7 @@ span.title {
 .author_name {
     font-size: 30px;
     margin: 10px 0 10px 0;
+    margin-top: 20px;
 }
 .aklj_jqhw {
     width: 150px;
@@ -104,6 +105,7 @@ div.item_project {
 div.item_project:hover {
     transform: scale(1.009);
     transition: .3s ease-in-out;
+    box-shadow: rgba(231, 130, 240, 0.801) 0px 13px 17px -5px, rgba(247, 244, 244, 0.829) 0px 8px 10px -8px;
 }
 div.item_project:hover img.preview {
     transform: scale(1.07);
@@ -224,5 +226,5 @@ img.preview {
     justify-content: flex-start;
 }
 .value_description {
-    min-height: 55px;
+    min-height: 35px;
 }

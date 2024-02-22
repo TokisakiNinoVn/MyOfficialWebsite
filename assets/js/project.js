@@ -44,7 +44,7 @@ function flagNumber(value) {
 
 function showProjectEvenNumber(infor_project) {
     const html = `
-        <div href=" ${infor_project.linkView} " class="item_project">
+        <div class="item_project">
             <div class="div_for_img">
                 <img src="${infor_project.img}" alt="Img Project" class="preview">
             </div>
@@ -68,17 +68,17 @@ function showProjectEvenNumber(infor_project) {
                         <ion-icon name="repeat-outline"></ion-icon>
                         <span class="value_language wkuj_wiue">${infor_project.language}</span>
                     </div>
-                    <div class="mawh">
+                    <a class="mawh" href=" ${infor_project.linkView}" target="_blank" rel="noopener noreferrer" >
                         <ion-icon name="eye-outline"></ion-icon>
                         <span class="wkuj_wiue">View</span>
-                    </div>
-                    <div class="mawh">
+                    </a>
+                    <a class="mawh" href=" ${infor_project.source}" target="_blank" rel="noopener noreferrer" >
                         <ion-icon name="code-slash-outline"></ion-icon>
                         <span class="">Source</span>
-                    </div>
+                    </a>
                 </div>
                 </div>
-                <a href="${infor_project.linkView}" target="_blank" rel="noopener noreferrer" class="more_information_project">
+                <a href="${infor_project.source}" target="_blank" rel="noopener noreferrer" class="more_information_project">
                     <span class="view_more_p">More</span>
                     <ion-icon name="chevron-forward-outline"></ion-icon>
                 </a>
@@ -92,7 +92,7 @@ function showProjectEvenNumber(infor_project) {
 
 function showProjectOddNumber(infor_project) {
     const html = `
-        <div href=" ${infor_project.linkView} " class="item_project">
+        <div class="item_project">
             <div class="content_project">
                 <div class="top_content top_content_">
                     <div class="first_update">
@@ -113,14 +113,14 @@ function showProjectOddNumber(infor_project) {
                         <ion-icon name="repeat-outline"></ion-icon>
                         <span class="value_language wkuj_wiue">${infor_project.language}</span>
                     </div>
-                    <div class="mawh">
+                    <a class="mawh" href="${infor_project.linkView}" target="_blank" rel="noopener noreferrer">
                         <ion-icon name="eye-outline"></ion-icon>
                         <span class="wkuj_wiue">View</span>
-                    </div>
-                    <div class="mawh">
+                    </a>
+                    <a class="mawh" href="${infor_project.source}" target="_blank" rel="noopener noreferrer">
                         <ion-icon name="code-slash-outline"></ion-icon>
                         <span class="">Source</span>
-                    </div>
+                    </a>
                 </div>
                 </div>
                 <div class="div_for_img div_for_img_">
@@ -135,28 +135,4 @@ function showProjectOddNumber(infor_project) {
     `
     const projectDiv = document.querySelector(".list_project");
     projectDiv.insertAdjacentHTML("beforeend", html);
-    // const project = infor_project[0];
-    // const listProjectDiv = document.createElement("div");
-    // listProjectDiv.classList.add("item_project");
-
-    // const img = document.createElement("img");
-    // img.src = project.img;
-    // img.alt = "";
-    // img.classList.add("preview");
-
-    // const divLink = document.createElement("div");
-    // divLink.classList.add("div_link");
-
-    // const a = document.createElement("a");
-    // a.href = project.linkView;
-    // a.classList.add("link_project");
-
-    // const span = document.createElement("span");
-    // span.textContent = project.name;
-
-    // a.appendChild(span);
-    // divLink.appendChild(a);
-    // listProjectDiv.appendChild(img);
-    // listProjectDiv.appendChild(divLink);
-    // projectDiv.appendChild(listProjectDiv);
 }
