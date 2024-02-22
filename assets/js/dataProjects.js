@@ -1,19 +1,19 @@
 const infor_project = [
     {
         flagNumber: 2,
-        linkView: "https://nino.is-a.dev/",
-        img: "./assets/image/Elysia/_horizontal/Elysia(1).jpg",
-        dateDev: "2023-11-02",
-        source: "https://github.com/______/",
-        name: "My Card Information",
-        description: "My Card Information",
-        language: "HTML, CSS, JS",
-        collection: Math.floor(Math.random() * 20),
+        linkView: "https://nino.is-a.dev/", //1
+        img: "./assets/image/HoshinoAi/_horizontal/HoshinoAi(1).jpg", //2
+        dateDev: "2023-11-02", // 3
+        source: "https://github.com/______/", //4
+        name: "My Card Information", //5
+        description: "My Card Information", // 6
+        language: "HTML, CSS, JS", //7
+        collection: Math.floor(Math.random() * 20), //8
     },
     {
         flagNumber: 3,
         linkView: "https://nino.is-a.dev/MyOfficialWebsite/",
-        img: "./assets/image/Elysia/_horizontal/Elysia(2).jpg",
+        img: "./assets/image/Elysia/_horizontal/Elysia(1).jpg",
         dateDev: "2023-11-24",
         source: "https://github.com/______/",
         name: "My official website",

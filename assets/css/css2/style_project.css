@@ -40,6 +40,7 @@ span.title {
 .card_profile {
     background-color: rgb(84, 84, 85);
     width: 300px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -222,4 +223,6 @@ img.preview {
     display: flex;
     justify-content: flex-start;
 }
-
+.value_description {
+    min-height: 55px;
+}
