@@ -39,7 +39,7 @@ const infor_project = [
         dateDev: "2023-11-24",
         source: "#",
         name: "Character Champions League",
-        description: "",
+        description: "!!",
         language: "HTML, CSS, JS",
         collection: Math.floor(Math.random() * 20),
     },

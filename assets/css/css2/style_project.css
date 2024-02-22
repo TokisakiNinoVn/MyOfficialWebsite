@@ -96,7 +96,7 @@ ul.contacts li ion-icon {
 /* Chung */
 div.item_project {
     width: 100%;
-    background-color: aliceblue;
+    background-color: rgb(57, 59, 61);
     height: 200px;
     display: flex;
     border-radius: 8px;
@@ -227,4 +227,8 @@ img.preview {
 }
 .value_description {
     min-height: 35px;
+}
+
+.value_tittle, .mawh, .top_content, .value_description {
+    color: white;
 }
