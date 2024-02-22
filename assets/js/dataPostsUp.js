@@ -2,7 +2,7 @@ import { textEditors } from "./dataTextEditorsPort.js";
 const infor_posts = [
     {
         tittle: "Happy New Year 2024! 🎉🎉🎉",
-        description: "Wishing everyone a new year filled with happiness, good health and great success! Hope the best things will come to you and your family in this new year. Leave the burdens of the old year behind and welcome new opportunities, new experiences and new achievements in the coming new year. Happy New Year, live strong, love and be patient in the face of all challenges. Enjoy every moment and make every day a memorable one! A peaceful and happy new year! <br> Link art: " + textEditors[3],
+        description: "Wishing everyone a new year filled with happiness, good health and great success! Hope the best things will come to you and your family in this new year. Leave the burdens of the old year behind and welcome new opportunities, new experiences and new achievements in the coming new year. Happy New Year, live strong, love and be patient in the face of all challenges. Enjoy every moment and make every day a memorable one! A peaceful and happy new year! <br> Link art: " + textEditors[4],
         urlImg: "https://pbs.twimg.com/media/GECXTnRbYAALhui?format=jpg&name=large",
         dayPost: "2023-01-10" + textEditors[1],
         countView: "0",
