@@ -90,7 +90,6 @@ const infor_project = [
     //     language: "HTML, CSS, JS",
     //     collection: Math.floor(Math.random() * 20),
     // },
-
 ]
 
 export { infor_project };
