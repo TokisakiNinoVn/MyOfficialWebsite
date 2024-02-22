@@ -43,6 +43,9 @@ body {
 ul, li {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
 
 /*______________ [ light-mode ] _____________________________________________________________________*/
 body.light-mode  {

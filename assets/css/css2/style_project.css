@@ -52,12 +52,16 @@ ul.contacts li ion-icon {
 .list_project {
     width: 700px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 10px;
 }
 
-.item_project {
+a.item_project {
     width: 100%;
+    background-color: aliceblue;
+    height: 200px;
+    display: flex;
 }
 
 img.preview {
@@ -67,8 +71,36 @@ img.preview {
     box-shadow: rgba(255, 83, 3, 0.842) 0px 5px 15px; */
 }
 
-.div_link {
-    /* width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .div_link {
+    width: 100%;
     height: 98%;
     display: flex;
     justify-content: center;
@@ -80,8 +112,8 @@ img.preview {
 
     position: absolute;
     top: 0;
-    left: 0; */
-}
+    left: 0;
+} */
 
 /* .div_link:hover {
     background-color: rgba(0, 0, 0, 0.345);
@@ -92,17 +124,17 @@ img.preview {
     display: none;
 } */
 
-a.link_project {
+/* a.link_project {
     background-color: rgb(251, 251, 251);
     text-decoration: none;
     text-align: center;
     color: black;
     padding: 10px;
-    /* border-radius: 20px; */
+    border-radius: 20px;
     font-weight: bold;
-}
-a.link_project:hover {
-    /* transform: scale(1.1);
-    transition: .5s ease-in; */
+} */
+/* a.link_project:hover {
+    transform: scale(1.1);
+    transition: .5s ease-in;
     background-image: linear-gradient(45deg, rgba(246, 0, 250, 0.63) 28%, rgba(0, 238, 255, 0.78) 100%);
-}
+} */
