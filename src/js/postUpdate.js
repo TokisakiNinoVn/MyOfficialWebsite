@@ -4,7 +4,7 @@ const countPost = infor_posts.length;
 document.querySelector('.count_post').innerText = `[`+ countPost + "]";
 
 
-const linkAvatar = "./assets/image/Avt.jpg"
+const linkAvatar = "./assets/images/Avt.jpg"
 function displayPosts(posts) {
     let mainPostScroll = document.getElementById('items_scroll');
 

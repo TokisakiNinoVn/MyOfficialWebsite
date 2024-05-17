@@ -23,7 +23,7 @@ const infor_posts = [
     {
         tittle: "Yahoo!",
         description: "Test code view video on post",
-        urlImg: "./assets/image/mwsi.mp4",
+        urlImg: "./assets/images/mwsi.mp4",
         dayPost: "2023/12/21" + textEditors[1],
         countView: "0",
         linkSource: textEditors[0],
@@ -43,7 +43,7 @@ const infor_posts = [
     {
         tittle: "Tokisaki Nino",
         description: "Elysia is my waifu. I love her so much. I will post her pictures here. Simp for Elysia.",
-        urlImg: "./assets/image/Elysia_.jpg",
+        urlImg: "./assets/images/Elysia_.jpg",
         dayPost: "2023/12/17" + textEditors[1],
         countView: "0",
         linkSource: textEditors[0],
@@ -53,7 +53,7 @@ const infor_posts = [
     {
         tittle: "Tokisaki Nino",
         description: "This is my personal website. I will post my projects here. Hope you like it.",
-        urlImg: "./assets/image/Ai.jpg",
+        urlImg: "./assets/images/Ai.jpg",
         dayPost: "2023/12/17" + textEditors[1],
         countView: "0",
         linkSource: textEditors[0],
