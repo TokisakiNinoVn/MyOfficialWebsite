@@ -53,7 +53,7 @@ const infor_posts = [
     {
         tittle: "Tokisaki Nino",
         description: "This is my personal website. I will post my projects here. Hope you like it.",
-        urlImg: "./assets/images/Ai.jpg",
+        urlImg: "./assets/images/Elysia.full.3784764.jpg",
         dayPost: "2023/12/17" + textEditors[1],
         countView: "0",
         linkSource: textEditors[0],
