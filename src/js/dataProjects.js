@@ -76,9 +76,17 @@ const infor_project = [
         language: "HTML, CSS, JS",
         collection: Math.floor(Math.random() * 20),
     },
-
-
-
+    {
+        flagNumber: 3,
+        linkView: "https://github.com/TokisakiNinoVn/TokisakiNino-Ego",
+        img: "./assets/images/HoshinoAi/horizontal/HoshinoAi(2).jpg",
+        dateDev: "2023-11-24",
+        source: "https://github.com/TokisakiNinoVn/TokisakiNino-Ego",
+        name: "TokisakiNino-Ego",
+        description: "First website I made with VueJs: Elysia",
+        language: "HTML, CSS, Vue3",
+        collection: Math.floor(Math.random() * 20),
+    },
     // {
     //     flagNumber: ,
     //     linkView: "",

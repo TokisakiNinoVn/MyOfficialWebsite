@@ -97,7 +97,7 @@
 
 
 
-.main{
+.main {
   width: 100vw;
   height: 74vh;
   color: var(--black);
@@ -143,8 +143,8 @@
 }
 
 .myavt:hover {
-  /* transition: transform 0.5s ease;
-  transform: scale(1.1); */
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
 }
 
 .name {
@@ -163,6 +163,7 @@
   display: flex;
   text-align: center;
   color:var(--white);
+  font-size: 19px;
 }
 
 /*_______________________[ Contact ] ________________________________________ ____________________*/
