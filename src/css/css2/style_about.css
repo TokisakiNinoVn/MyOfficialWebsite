@@ -56,6 +56,9 @@ a {
 .active {
   display: flex !important;
 }
+.hidden {
+  display: none !important;
+}
 
 .active_ {
   color: rgb(216, 106, 183);
@@ -102,7 +105,7 @@ ul {
 }
 
 .background_img {
-  height: 300px;
+  height: 400px;
   width: 100vw;
   z-index: 1;
 }
@@ -156,9 +159,9 @@ ul {
 
 .frame_avatar {
   position: absolute;
-  left: -33px;
-  top: -25px;
-  width: 190px;
+  left: -25px;
+  top: -18px;
+  width: 180px;
   cursor: none;
 }
 
